@@ -66,7 +66,9 @@
 
 - https://www.bilibili.com/video/BV1q4411e7MB
 
-&nbsp;&nbsp;&nbsp;&nbsp; 数据库导入  [AiClouds3.0 MySQL.sql](AiClouds3.0 MySQL.sql) ,
+&nbsp;&nbsp;&nbsp;&nbsp; 数据库导入根目录的 **AiClouds3.0 MySQL.sql** 文件，因里面有一些限制关系，需要在**144 行**左右，修改一个参数为 您的当前数据库名字，切记！
+
+
 
 # 感谢：
 
