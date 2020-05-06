@@ -56,12 +56,12 @@
 
 ### 环境搭建
 
-&nbsp;&nbsp;&nbsp;&nbsp;  因为此为基于 RTOS 系统上开发，需要一定的C基础或 freeRtos 开发基础，强烈建议使用 Linux 开发；
+&nbsp;&nbsp;&nbsp;&nbsp;  因为此为基于 Tp5 国产框架上开发，需要一定的PHP基础和云端服务器部署灯开发基础；
 
-* [Windows](https://aithinker.blog.csdn.net/article/details/104390508)
-* [Linux](https://xuhong.blog.csdn.net/article/details/104736261)
+* 阿里云或腾讯云这些运维商购买一台远程服务器，以及一个备案通过的域名；
+* 微信公众号一个，可用个人测试号或企业性质的服务号;
 
-&nbsp;&nbsp;&nbsp;&nbsp;然后跑起 demo， 比如 [1.SmartConfig_AirKiss_To_MQTT](./Ai-examples/1.SmartConfig_AirKiss_To_MQTT)
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 ```
 cd /Ai-examples/1.SmartConfig_AirKiss_To_MQTT
