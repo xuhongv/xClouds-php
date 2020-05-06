@@ -41,14 +41,44 @@
 # xClouds-devices for  PHP  开发框架
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;  认识我的人都知道，我和乐鑫 ESP8266 芯片有一个解不开的缘分，我通过此芯片认识很多志同道合的的小伙伴，也让我逐渐地找到了自己的人生价值，所以，我会以自己擅长的 Wi-Fi模块二次开发，带领大家快速体验和商业化使用此物美价廉的芯片；
+&nbsp;&nbsp;&nbsp;&nbsp; **PHP是世界上最好的语言，不接受任何反驳。**哈哈，这种弱语言，是真的非常适合那些小项目和快速入门，现在就是基于国产框架 TP5 上开发的；
+
+## 文件主要目录
+
+```
+├─application 应用目录（可设置）
+│ ├─common 公共模块目录（可更改）
+│ ├─API 天猫精灵/小爱同学等第三方应用的API对外接口
+│ ├─wechat 微信公众号代码，包括配网和控制
+│ ├─index 模块目录(可更改)
+│ │ ├─config.php 模块配置文件
+│ │ ├─common.php 模块函数文件
+│ │ ├─controller 控制器目录
+│ │ ├─model 模型目录
+│ │ ├─view 视图目录
+│ │ └─ ... 更多类库目录
+│ ├─command.php 命令行工具配置文件
+│ ├─common.php 应用公共（函数）文件
+│ ├─config.php 应用（公共）配置文件
+│ ├─database.php 数据库配置文件
+│ ├─tags.php 应用行为扩展定义文件
+│ └─route.php 路由配置文件
+├─extend 扩展类库目录（oauth2.0 微信对接第三方库）
+├─public WEB 部署目录（对外访问目录）
+│ ├─static 静态资源存放目录(css,js,image)
+│ ├─index.php 应用入口文件
+│ ├─router.php 快速测试文件
+│ └─.htaccess 用于 apache 的重写
+├─runtime 应用的运行时目录（可写，可设置）
+├─vendor 第三方类库目录（Composer）
+├─build.php 自动生成定义文件（参考）
+├─composer.json composer 定义文件
+├─LICENSE.txt 授权说明文件
+├─README.md README 文件
+├─think 命令行入口文件
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;  本框架基于**ESP8266_RTOS_SDK v3.0** 上二次开发，采用C语言开发，并非 **arduino** 开发；
-
-## 例程简介
-
-* [1.SmartConfig_AirKiss_To_MQTT](./Ai-examples/1.SmartConfig_AirKiss_To_MQTT) : 简单模板，实现 smartconfig 一键配网 和 微信公众号 airkiss 配网，并实现连接 MQTT 服务器的通讯实现上下发数据的例子；
+```
 
 ---
 
