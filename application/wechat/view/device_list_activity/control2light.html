@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{$device.name}</title>
+    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/css/frozenui.css"/>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/demo/css/style.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.0/lib/index.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/power/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/power/css/font-awesome.css"/>
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.0/lib/vant.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css" rel="stylesheet">
+    <!-- 引入组件 -->
+    <script type="text/javascript" src="__STATIC__/colorpicker/farbtastic.js"></script>
+    <link rel="stylesheet" href="__STATIC__/colorpicker/farbtastic.css" type="text/css"/>
+    <link rel="stylesheet" href="__STATIC__/weui+/css/weui.css"/>
+    <link rel="stylesheet" href="__STATIC__/weui+/css/weuix.css"/>
+    <script src="__STATIC__/weui+/js/zepto.min.js"></script>
+    <script src="__STATIC__/weui+/js/zepto.weui.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
+    <script src="__STATIC__/slider/vue-slider-component.umd.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/mqtt/mqtt.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/mqtt/utils.js"></script>
+    <!-- 全局css样式 -->
+    <style>
+        .ui-flex {
+            margin-top: 40px;
+            border: white;
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+
+<div id="app" class="demo-item">
+
+    <div class="ui-flex ui-flex-pack-center">
+        <div class="switch demo4">
+            <input type="checkbox" value="true" @change="powerOnclick" v-model="ckeckVal">
+            <label><i class='icon-off'></i></label>
+        </div>
+
+    </div>
+
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright &copy; 半颗心脏</p>
+    </div>
+
+</div>
+</div>
+
+
+<script>
+
+
+    //对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    var useragent = navigator.userAgent;
+    if (useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        // 这里警告框会阻塞当前页面继续加载
+        //alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+        document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    }
+
+    let mqttConfig = ({$config})
+    let options = {
+        protocolVersion: 4, //MQTT连接协议版本
+        clean: false,
+        reconnectPeriod: 1000, //1000毫秒，两次重新连接之间的间隔
+        connectTimeout: 30 * 1000, //1000毫秒，两次重新连接之间的间隔
+        resubscribe: true, //如果连接断开并重新连接，则会再次自动订阅已订阅的主题（默认true）
+        clientId: mqttConfig.clientId,
+        password: mqttConfig.mqtt.password,
+        username: mqttConfig.mqtt.username,
+    };
+
+    let mqttClient = mqtt.connect(mqttConfig.mqtt.url, options);
+
+    //服务器连接异常的回调
+    mqttClient.on("error", function (error) {
+        console.log(" 服务器 error 的回调" + error)
+
+    })
+
+    //服务器重连连接异常的回调
+    mqttClient.on("reconnect", function () {
+        //console.log(" 服务器 reconnect的回调")
+
+    })
+    //服务器连接异常的回调
+    mqttClient.on("offline", function (errr) {
+        //console.log(" 服务器offline的回调")
+    })
+
+    function getName() {
+        console.log('powerOnclic!!!!k');
+    };
+
+    let app = new Vue({
+        el: '#app',
+        components: {},
+        data: {
+            deviceId: mqttConfig.deviceId,
+            deviceType: mqttConfig.type,
+            ckeckVal: false,
+            clientMqtt: mqttClient,
+            topicSub: mqttConfig.topicSub,
+            topicPub: mqttConfig.topicPub,
+        },
+        methods: {
+            init() {
+                console.log('start sub');
+                this.clientMqtt.subscribe(this.topicPub, function (err, granted) {
+                    if (!err) {
+                        //订阅主题成功
+                        console.log('订阅主题成功')
+                    } else {
+                        //订阅主题失败
+                        console.log('订阅主题失败')
+                    }
+                })
+                this.clientMqtt.on("message", function (topic, payload) {
+                    console.log(" 收到 topic:" + topic + " , payload :" + payload)
+                })
+            },
+            powerOnclick() {
+                console.log('powerOnclick' + this.ckeckVal);
+                if (this.ckeckVal) {
+                    let payload = TurnOn(this.deviceId, this.deviceType)
+                    this.clientMqtt.publish(this.topicSub, payload);
+                } else {
+                    let payload = TurnOff(this.deviceId, this.deviceType)
+                    this.clientMqtt.publish(this.topicSub, payload);
+                }
+            },
+        }
+    });
+
+
+    app.init();
+
+
+</script>
+
+</body>
+
+
+</html>
+
+

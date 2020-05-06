@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>七彩灯</title>
+    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/css/frozenui.css"/>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/demo/css/style.css">
+
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.0/lib/index.css">
+    <link href="https://unpkg.com/angular-radial-color-picker@latest/dist/css/color-picker.min.css" rel="stylesheet">
+
+
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.0/lib/vant.min.js"></script>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.cjs.js"></script>
+    <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.esm.js"></script>
+    <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.js"></script>
+    <link href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css" rel="stylesheet">
+
+
+
+    <!-- 引入组件 -->
+    <script type="text/javascript" src="__STATIC__/colorpicker/farbtastic.js"></script>
+    <link rel="stylesheet" href="__STATIC__/colorpicker/farbtastic.css" type="text/css"/>
+
+
+    <link rel="stylesheet" href="__STATIC__/weui+/css/weui.css"/>
+    <link rel="stylesheet" href="__STATIC__/weui+/css/weuix.css"/>
+
+    <script src="__STATIC__/weui+/js/zepto.min.js"></script>
+    <script src = "__STATIC__/weui+/js/zepto.weui.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
+    <script src="__STATIC__/slider/vue-slider-component.umd.min.js"></script>
+
+    <script type="text/javascript" src="__STATIC__/mqtt/mqtt.js"></script>
+
+
+    <!-- 全局css样式 -->
+    <style>
+
+        .ui-flex {
+            margin-top: 40px;
+            border: white;
+        }
+        .ui-btn-lg {
+            margin-top: 40px;
+            border: white;
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+
+<div id="app" class="demo-item">
+
+    <div class="ui-flex ui-flex-pack-center">
+        <color-picker v-bind="color" @input="onAlter"></color-picker>
+    </div>
+
+
+    <div class="ui-btn-group ui-border-t" >
+        <button  @click="clickRed" class="ui-btn-lg" style="color: rgb(255,0,0)">
+            红色
+        </button>
+        <button  @click="clickBlue" class="ui-btn-lg" style="color: rgb(0,255,0)">
+            蓝色
+        </button>
+        <button  @click="clickGreen"  class="ui-btn-lg" style="color: rgb(0,0,255)">
+            绿色
+        </button>
+    </div>
+
+
+    <div style="padding: 10px" >
+        <p class="ui-flex-pack-left" style="font-size: xx-small ; color: red" >红色调节: </p>
+        <vue-slider v-model="valueSlideRed" v-bind="sliderStyle"
+                    :lazy="true"
+                    :process-style="{ backgroundColor: 'red' }"
+                    :tooltip-style="{ backgroundColor: 'red', borderColor: 'red' }"
+                    @change="RedSliderCallback">
+        </vue-slider>
+    </div>
+
+    <div style="padding: 10px">
+        <div class="ui-flex-pack-left" style="font-size: xx-small ; color: green"  >绿色调节: </div>
+        <vue-slider v-model="valueSlideGreen" v-bind="sliderStyle"
+                    :lazy="true"
+                    :process-style="{ backgroundColor: 'green' }"
+                    :tooltip-style="{ backgroundColor: 'green', borderColor: 'green' }"
+                    @change="GreenSliderCallback">
+        </vue-slider>
+    </div>
+
+    <div style="padding: 10px">
+        <div class="ui-flex-pack-left" style="font-size: xx-small ; color: blue"  >蓝色调节: </div>
+        <vue-slider v-model="valueSlideBlue" v-bind="sliderStyle"
+                    :lazy="true"
+                    :process-style="{ backgroundColor: 'blue' }"
+                    :tooltip-style="{ backgroundColor: 'blue', borderColor: 'blue' }"
+                    @change="BlueSliderCallback">
+        </vue-slider>
+    </div>
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright &copy; 半颗心脏</p>
+    </div>
+
+</div>
+</div>
+
+
+<script>
+
+
+    //对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    var useragent = navigator.userAgent;
+    if (useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        // 这里警告框会阻塞当前页面继续加载
+        //alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+        document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    }
+
+
+
+    let options = {
+        protocolVersion: 4, //MQTT连接协议版本
+        clean: false,
+        reconnectPeriod: 1000, //1000毫秒，两次重新连接之间的间隔
+        connectTimeout: 30 * 1000, //1000毫秒，两次重新连接之间的间隔
+        resubscribe: true, //如果连接断开并重新连接，则会再次自动订阅已订阅的主题（默认true）
+        clientId: 'html',
+        password: 'xuhong123',
+        username: 'admin',
+    };
+
+    let mqttClient = mqtt.connect('wss://www.xuhonys.cn:443/mqtt',options);
+
+    //服务器连接异常的回调
+    mqttClient.on("error", function (error) {
+        console.log(" 服务器 error 的回调" + error)
+
+    })
+
+    //服务器重连连接异常的回调
+    mqttClient.on("reconnect", function () {
+        console.log(" 服务器 reconnect的回调")
+
+    })
+    //服务器连接异常的回调
+    mqttClient.on("offline", function (errr) {
+        console.log(" 服务器offline的回调")
+    })
+
+
+    var ColorPicker = window.VueColorPicker;
+    let app = new Vue({
+        el: '#app',
+        components: {
+            ColorPicker: ColorPicker,
+            VueSlider: window['vue-slider-component'],
+        },
+        data: {
+            clientMqtt: mqttClient,
+            valueSlideRed: 0,
+            valueSlideGreen: 0,
+            valueSlideBlue: 0,
+            colorAlterCounts: 0,
+            color: {
+                hue: 50,
+                saturation: 100,
+                luminosity: 50,
+                alpha: 1
+            },
+            sliderStyle:{
+                width: '100%',
+                show: false,
+                value: [0, 100],
+                min: 0,
+                max: 100,
+                piecewiseLabel: true,
+                tooltip: 'none',
+                tooltipDir: [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        methods: {
+            onAlter: function (hue) {
+                if (this.colorAlterCounts++ > 20) {
+                    this.colorAlterCounts = 0;
+                    console.log(('onInput'), this.color);
+                    this.color.hue = hue;
+                    this.clientMqtt.publish('/World','rgb')
+                }
+
+            },
+            clickRed: function () {
+                console.log(('clickRed'));
+            },
+            clickBlue: function () {
+                console.log(('clickBlue'));
+            },
+            clickGreen: function () {
+                console.log(('clickGreen'));
+            },
+            RedSliderCallback:function (value) {
+                this.valueSlideRed = value
+                console.log(('RedSliderCallback')+value);
+                console.log(('RedSliderCallback')+this.valueSlideRed);
+            },
+            GreenSliderCallback:function (value) {
+                this.valueSlideGreen = value
+                console.log(('RedSliderCallback')+this.valueSlideRed);
+            },
+            BlueSliderCallback:function (value) {
+                this.valueSlideBlue = value
+                console.log(('RedSliderCallback')+this.valueSlideRed);
+            },
+        }
+    });
+
+
+
+
+
+
+</script>
+
+</body>
+
+
+</html>
+
+

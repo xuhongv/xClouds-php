@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>设备列表</title>
+    <link rel="stylesheet" href="__STATIC__/weui_new/css/weui.css"/>
+    <link rel="stylesheet" href="__STATIC__/weui_new/css/weuix.css"/>
+    <script src="__STATIC__/weui_new/js/zepto.min.js"></script>
+    <script src="__STATIC__/weui_new/js/zepto.weui.js"></script>
+    <!-- 引入 FrozenUI -->
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/css/frozenui.css"/>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+</head>
+<body>
+
+<div>
+    <!-- 使用 -->
+    <div class="list" id="item-success">
+        <div class="demo-item">
+            <div class="demo-block">
+                {volist name="devicesList" id="item"}
+                <!--离线就不显示箭头-->
+                {if condition="$item.online eq 1"}
+                <!--<ul class="ui-list ui-list-link ui-border-tb">-->
+                <ul class="ui-list  ui-border-tb">
+                    {elseif condition="$item.online eq 0"}
+                    <ul class="ui-list  ui-border-tb">
+                        {/if}
+                        <li value="{$key}">
+                            <div class="ui-avatar">
+                                <span style="background-image:url({$item.img})"></span>
+                            </div>
+                            <div class="ui-list-info ui-border-t">
+                                <h4 class="ui-nowrap">{$item.alias}</h4>
+                                {if condition="$item.online eq 1"}
+                                <p>在线</p>
+                                <!--离线就显示离线文字-->
+                                {elseif condition="$item.online eq 0"}
+                                <p>离线</p>
+                                {/if}
+                            </div>
+                        </li>
+                    </ul>
+                    {/volist}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- show empty list error-->
+<div class="page" id="item-error">
+    <div class="weui-msg">
+        <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+        <div class="weui-msg__text-area">
+            <h3 class="weui-msg__title">抱歉，您未绑定设备或加载异常！</h3>
+            <p class="weui-msg__desc">购买一个吧！<a href="javascript:void(0);">淘宝链接</a></p>
+        </div>
+
+            <div class="weui-msg__opr-area">
+                <p class="weui-btn-area">
+                    <a href="javascript:history.back();" class="weui-btn weui-btn_default">返回主页</a>
+                </p>
+            </div>
+        <!--<div class="weui-msg__extra-area">-->
+        <!--    <div class="weui-footer">-->
+        <!--        <p class="weui-footer__links">-->
+        <!--            <a href="javascript:void(0);" class="weui-footer__link">底部链接文本</a>-->
+        <!--        </p>-->
+        <!--        <p class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</p>-->
+        <!--    </div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div>
+    <div class="weui-mask" id="iosMask" style="display: none"></div>
+    <div class="weui-actionsheet" id="iosActionsheet">
+        <div class="weui-actionsheet__title">
+            <p class="weui-actionsheet__title-text">设备管理</p>
+        </div>
+        <div class="weui-actionsheet__menu">
+            <div class="weui-actionsheet__cell" id="doActionReNameDevice">重命名设备</div>
+            <div class="weui-actionsheet__cell weui-actionsheet__cell_warn"
+                 id="doActionDeleteDevice">设备解绑
+            </div>
+        </div>
+        <div class="weui-actionsheet__action">
+            <div class="weui-actionsheet__cell" id="iosActionsheetCancel">取消</div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+
+    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    var useragent = navigator.userAgent;
+    if (useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        // 这里警告框会阻塞当前页面继续加载
+        //alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+        document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    }
+    let deviceList = {$list};
+    if (deviceList) {
+        if (deviceList.length > 0) {
+            $("item-success").show();
+            $("#item-error").hide();
+        } else {
+            $("item-success").hide();
+            $("#item-error").show();
+        }
+    } else {
+        $("item-success").hide();
+        $("#item-error").show();
+    }
+
+    //当前的操作设备对象
+    let currentDevice = null;
+
+    var $iosActionsheet = $('#iosActionsheet');
+    var $iosMask = $('#iosMask');
+
+    function hideActionSheet() {
+        $iosActionsheet.removeClass('weui-actionsheet_toggle');
+        $iosMask.fadeOut(200);
+    }
+
+    $iosMask.on('click', hideActionSheet);
+
+    //隐藏
+    $('#iosActionsheetCancel').on('click', hideActionSheet);
+    //重命名弹窗
+    $('#doActionReNameDevice').on('click', function () {
+        hideActionSheet();
+        if (currentDevice != null) {
+            $.prompt({
+                title: '重命名设备',
+                input: '',
+                empty: false, // 是否允许为空
+                onOK: function (input) {
+                    if (!(input === "")) {
+                        currentDevice.newName = input;
+                        $.ajax({
+                            type: 'POST',
+                            url: "{:url('DeviceListActivity/reNameDevice')}",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            data: JSON.stringify(currentDevice),
+                            success: function (data) {
+                                $.toast(data.msg, 1500);
+                                let nums = 0;
+                                let timer = setInterval(function () {
+                                    if (nums++ > 1) {
+                                        clearInterval(timer);
+                                        document.location.reload();
+                                    }
+                                }, 150);
+                            }
+                        });
+                    }
+                },
+                onCancel: function () {
+                    //点击取消
+                }
+            });
+        }
+    });
+    $('#doActionDeleteDevice').on('click', function () {
+        hideActionSheet();
+        $.confirm("您确定要解绑吗?", "解绑之后需要重新配网哦", function () {
+            $.ajax({
+                type: 'POST',
+                url: "{:url('DeviceListActivity/deleteRelDevice')}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(currentDevice),
+                success: function (data) {
+                    $.toast(data.msg, 1500);
+                    let nums = 0;
+                    let timer = setInterval(function () {
+                        if (nums++ > 1) {
+                            clearInterval(timer);
+                            document.location.reload();
+                        }
+                    }, 150);
+                }
+            });
+            //deleteRelDevice
+        }, function () {
+            //取消操作
+        });
+    });
+
+    $("ul li").click(function () {
+        currentDevice = deviceList[$(this).index()];
+        console.log("device:", JSON.stringify(currentDevice));
+        $iosActionsheet.addClass('weui-actionsheet_toggle');
+        $iosMask.fadeIn(200);
+    });
+</script>
+
+</body>
+</html>

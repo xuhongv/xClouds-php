@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title>选择配网的设备类型</title>
+    <!-- 引入 FrozenUI -->
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/css/frozenui.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<!-- 使用 -->
+<div class="list">
+    <div class="demo-item">
+        <div class="demo-block">
+            <ul class="ui-list ui-list-link ui-border-tb">
+                {volist name="devicesList" id="item"}
+                <li value="{$key}">
+                    <div class="ui-avatar">
+                        <span style="background-image:url({$item.icon})"></span>
+                    </div>
+                    <div class="ui-list-info ui-border-t">
+                        <h4 class="ui-nowrap">{$item.name}</h4>
+                        <p value="{$key}">{$item.des}</p>
+                    </div>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+
+    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    var useragent = navigator.userAgent;
+    if(useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        // 这里警告框会阻塞当前页面继续加载
+        //alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+        document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    }
+
+
+    //get data form model
+    //var chartData = {list};
+    $("ul li").click(function () {
+       // var device = chartData[$(this).index()];
+        mHref = "{:url('ReadyDeviceActivity/index')}";
+        //console.log('mHref:'+mHref)
+        window.location.href = mHref+'?index='+$(this).index();
+    });
+
+
+</script>
+
+</body>
+</html>

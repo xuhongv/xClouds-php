@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>绑定设备个人详情</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/css/frozenui.css"/>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/demo/css/style.css">
+
+    <link rel="stylesheet" href="__STATIC__/weui+/css/weui.css"/>
+    <link rel="stylesheet" href="__STATIC__/weui+/css/weuix.css"/>
+
+    <script src="__STATIC__/weui+/js/zepto.min.js"></script>
+    <script src="__STATIC__/weui+/js/zepto.weui.js"></script>
+
+
+</head>
+<body>
+
+<section id="tooltips">
+    <div class="ui-tooltips ui-tooltips-guide">
+        <div class="ui-tooltips-cnt ui-border-b">
+            <i></i>这是一个广告条<a class="ui-icon-close" id="tipsClose"></a>
+            <!--微信与APP账号体系不一致，需在APP自行绑定。-->
+        </div>
+    </div>
+
+</section>
+<section id="avatar">
+    <h1 class="title"></h1>
+    <div class="ui-flex ui-flex-pack-center" style="color: white ; border: white ; margin-top: 20px">
+        <div class="ui-avatar-lg">
+            <span style="background-image:url(http://placeholder.qiniudn.com/140x140)" id="headimgurl"></span>
+        </div>
+    </div>
+    <div class="ui-flex ui-flex-pack-center" style="color: black ; border: white ; margin-top: 10px">
+        <h3 class="name" id="nickName">未知</h3>
+    </div>
+
+
+    <div class="demo-block">
+        <ul class="ui-list ui-list-single ui-list-link ui-border-tb">
+            <li id="itemUserCode" class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">获取个人授权码</h4>
+                    <div class="ui-txt-info"></div>
+                </div>
+            </li>
+
+            <li id="itemDeviceList" class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">设备列表</h4>
+                    <div class="ui-txt-info"></div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+</section>
+
+
+<div class="ui-btn-wrap ui-btn-wrap-middle" style="margin-top: 100px" id="btnStart">
+    <button class="ui-btn-lg-nowhole ui-btn-primary">
+        开始绑定
+    </button>
+</div>
+
+<script type="text/javascript">
+
+
+    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    var useragent = navigator.userAgent;
+    if (useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        // 这里警告框会阻塞当前页面继续加载
+        //alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+        document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    }
+
+
+    if ({$isOauth}) {
+        console.log('已经授权')
+        $("#headimgurl").css('background-image', 'url("{$headimgurl}")');
+        $("#nickName").text("{$nickName}")
+    } else {
+        console.log('未授权')
+        window.location.href = "{$url}";
+    }
+
+
+    $("#tipsClose").click(function () {
+        $("#tooltips").hide()
+    });
+
+    $('#btnStart').click(function () {
+        mHref = "{:url('GuideDeviceTypeListActivity/index')}";
+        window.location.href = mHref + '?index=1';
+    });
+
+
+    $('#itemDeviceList').click(function () {
+        mHref = "{:url('DeviceListActivity/index')}";
+        window.location.href = mHref;
+    })
+
+
+    $('#itemUserCode').click(function () {
+        $.ajax({
+            type: 'POST',
+            url: "{:url('BindPhoneActivity/createOauthCode')}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                //alert("" + JSON.stringify(data));
+                if (data.code)
+                    $.modal({
+                        title: "您的授权码: " + data.data.code + "",
+                        buttons: [
+                            {
+                                text: "好的", onClick: function () {
+                                    console.log(1)
+                                }
+                            },
+                        ]
+                    });
+                else
+                    $.modal({
+                        title: "获取授权码失败",
+                        text: data.msg,
+                        buttons: [
+                            {
+                                text: "关闭页面", onClick: function () {
+                                    //关闭这个窗口，返回微信公众号主页
+                                    wx.closeWindow();
+                                }
+                            },
+                        ]
+                    });
+            }
+        });
+    })
+
+</script>
+</body>
+</html>

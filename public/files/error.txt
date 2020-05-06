@@ -1,0 +1,963 @@
+[26-Apr-2020 16:06:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:06:16 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:06:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:06:16 PRC] [Debug]{"requestId":"6ouj8z9my6kt1wmb9mjerzzs16048f6q","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:06:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:06:16 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:06:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:06:16 PRC] [Debug]success send miot msg ：{"requestId":"6ouj8z9my6kt1wmb9mjerzzs16048f6q","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":2,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":3,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":4,"status":-1,"description":"the device is not exit"}]}
+[26-Apr-2020 16:07:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:07:19 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:07:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:07:19 PRC] [Debug]{"requestId":"33f5eca14c1cd92b05154224a52e3c3b","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":1}]}
+[26-Apr-2020 16:07:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:07:19 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:07:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:07:19 PRC] [Debug]success send miot msg ：{"requestId":"33f5eca14c1cd92b05154224a52e3c3b","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":1,"status":0,"value":"off"}]}
+[26-Apr-2020 16:07:20 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:07:20 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:07:20 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:07:20 PRC] [Debug]{"requestId":"33f5eca14c1cd92b05154224a52e3c3b","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":1,"value":true},{"did":"19-12","siid":2,"piid":5,"value":0}]}
+[26-Apr-2020 16:07:20 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:07:20 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:07:20 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:07:20 PRC] [Debug]success send miot msg ：{"requestId":"33f5eca14c1cd92b05154224a52e3c3b","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":1,"status":0},{"did":"19-12","siid":2,"piid":5,"status":0}]}
+[26-Apr-2020 16:10:28 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:10:28 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:10:28 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:10:28 PRC] [Debug]{"requestId":"5d66je331e20j300kw487j3pe5d0ce2r","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:10:28 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:10:28 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:10:28 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:10:28 PRC] [Debug]success send miot msg ：{"requestId":"5d66je331e20j300kw487j3pe5d0ce2r","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":2,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":3,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":4,"status":-1,"description":"the device is not exit"}]}
+[26-Apr-2020 16:11:17 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:11:17 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:11:17 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:11:17 PRC] [Debug]{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:11:17 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:11:17 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:11:17 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:11:17 PRC] [Debug]success send miot msg ：{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":2,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":3,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":4,"status":-1,"description":"the device is not exit"}]}
+[26-Apr-2020 16:11:47 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:11:47 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:11:47 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:11:47 PRC] [Debug]{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:11:47 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:11:47 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:11:47 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:11:47 PRC] [Debug]success send miot msg ：{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":2,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":3,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":4,"status":-1,"description":"the device is not exit"}]}
+[26-Apr-2020 16:12:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:12:12 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:12:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:12:12 PRC] [Debug]{"requestId":"dafb7d23e779bd02188b1530a2222278","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":1,"value": true},{"did":"19-12","siid":2,"piid":3,"value":1000}]}
+[26-Apr-2020 16:12:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:12:12 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:12:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:12:12 PRC] [Debug]success send miot msg ：{"requestId":"dafb7d23e779bd02188b1530a2222278","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":1,"status":0},{"did":"19-12","siid":2,"piid":3,"status":0}]}
+[26-Apr-2020 16:14:10 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:14:10 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:14:10 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:14:10 PRC] [Debug]{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:14:10 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:14:10 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:14:10 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:14:10 PRC] [Debug]success send miot msg ：{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"off"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"100"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"4000"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"Yellow"}]}
+[26-Apr-2020 16:14:27 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 307
+[26-Apr-2020 16:14:27 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:14:27 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 308
+[26-Apr-2020 16:14:27 PRC] [Debug]{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:14:27 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 342
+[26-Apr-2020 16:14:27 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:14:27 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 365
+[26-Apr-2020 16:14:27 PRC] [Debug]success send miot msg ：{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":2,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":3,"status":-1,"description":"the device is not exit"},{"did":"19-12","siid":1,"piid":4,"status":-1,"description":"the device is not exit"}]}
+[26-Apr-2020 16:24:00 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:24:00 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:24:00 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:24:00 PRC] [Debug]{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:24:00 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:24:00 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:24:00 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:24:00 PRC] [Debug]success send miot msg ：{"requestId":"70qwp0ylz6a4lzs7oluph6cgd5uaivfg","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"6001947a70a7"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"V2.3"}]}
+[26-Apr-2020 16:24:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:24:12 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:24:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:24:12 PRC] [Debug]{"requestId":"1st7ek07maer3lhwshysteti65j60hvp","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:24:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:24:12 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:24:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:24:12 PRC] [Debug]success send miot msg ：{"requestId":"1st7ek07maer3lhwshysteti65j60hvp","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"6001947a70a7"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"V2.3"}]}
+[26-Apr-2020 16:24:39 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:24:39 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:24:39 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:24:39 PRC] [Debug]{"requestId":"794b8sjhyjq7kc3di6oyzkt6h7jzqrcz","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":1}]}
+[26-Apr-2020 16:24:39 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:24:39 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:24:39 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:24:39 PRC] [Debug]success send miot msg ：{"requestId":"794b8sjhyjq7kc3di6oyzkt6h7jzqrcz","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":1,"status":0,"value":"off"}]}
+[26-Apr-2020 16:24:43 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:24:43 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:24:43 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:24:43 PRC] [Debug]{"requestId":"3xl8arzdnx244mxwp2zg6xyro7i7dq30","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:24:43 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:24:43 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:24:43 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:24:43 PRC] [Debug]success send miot msg ：{"requestId":"3xl8arzdnx244mxwp2zg6xyro7i7dq30","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"6001947a70a7"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"V2.3"}]}
+[26-Apr-2020 16:24:55 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:24:55 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:24:55 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:24:55 PRC] [Debug]{"requestId":"1lws7h8x4m6ms7wae0yjn85fi15w8dsz","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":3}]}
+[26-Apr-2020 16:24:55 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:24:55 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:24:55 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:24:55 PRC] [Debug]success send miot msg ：{"requestId":"1lws7h8x4m6ms7wae0yjn85fi15w8dsz","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":3,"status":0,"value":"4000"}]}
+[26-Apr-2020 16:24:58 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:24:58 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:24:58 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:24:58 PRC] [Debug]{"requestId":"3x6b43uuqzllin4jiaamt3a3v2921vhc","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":3,"value":4000}]}
+[26-Apr-2020 16:24:58 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:24:58 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:24:58 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:24:58 PRC] [Debug]success send miot msg ：{"requestId":"3x6b43uuqzllin4jiaamt3a3v2921vhc","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":3,"status":0}]}
+[26-Apr-2020 16:25:01 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:25:01 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:25:01 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:25:01 PRC] [Debug]{"requestId":"1acu9h8et0q4elva8bcv0qd861fm0mmz","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":4}]}
+[26-Apr-2020 16:25:01 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:25:01 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:25:01 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:25:01 PRC] [Debug]success send miot msg ：{"requestId":"1acu9h8et0q4elva8bcv0qd861fm0mmz","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":4,"status":0,"value":"Yellow"}]}
+[26-Apr-2020 16:27:24 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:27:24 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:27:24 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:27:24 PRC] [Debug]{"requestId":"5t1ogjt0p5n99e07hj6m3fbif47cl573","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:27:24 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:27:24 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:27:24 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:27:24 PRC] [Debug]success send miot msg ：{"requestId":"5t1ogjt0p5n99e07hj6m3fbif47cl573","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"6001947a70a7"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"V2.3"}]}
+[26-Apr-2020 16:27:30 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:27:30 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:27:30 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:27:30 PRC] [Debug]{"requestId":"6z6y8m28igoun7ajm0jey1q4m4cedyt8","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"value":1}]}
+[26-Apr-2020 16:27:30 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:27:30 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:27:30 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:27:30 PRC] [Debug]success send miot msg ：{"requestId":"6z6y8m28igoun7ajm0jey1q4m4cedyt8","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"status":-1,"description":"the mode's value not in range"}]}
+[26-Apr-2020 16:28:50 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:28:50 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:28:50 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:28:50 PRC] [Debug]{"requestId":"5w3ut9tabyjn1oqalewfhmal53ixv3uv","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":1}]}
+[26-Apr-2020 16:28:50 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:28:50 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:28:50 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:28:50 PRC] [Debug]success send miot msg ：{"requestId":"5w3ut9tabyjn1oqalewfhmal53ixv3uv","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":1,"status":0,"value":"off"}]}
+[26-Apr-2020 16:29:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:29:04 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:29:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:29:04 PRC] [Debug]{"requestId":"3w5adadt3p04i4qutk8jk53r72x123ur","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 16:29:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:29:04 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:29:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:29:04 PRC] [Debug]success send miot msg ：{"requestId":"3w5adadt3p04i4qutk8jk53r72x123ur","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"AiClouds Dev"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"6001947a70a7"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"V2.3"}]}
+[26-Apr-2020 16:29:13 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:29:13 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:29:13 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:29:13 PRC] [Debug]{"requestId":"5f5hvdp18rrtt0wdlzn5pt4jr4mkwrv2","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"value":1}]}
+[26-Apr-2020 16:29:13 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:29:13 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:29:13 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:29:13 PRC] [Debug]success send miot msg ：{"requestId":"5f5hvdp18rrtt0wdlzn5pt4jr4mkwrv2","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"status":-1,"description":"the mode's value not in range"}]}
+[26-Apr-2020 16:30:40 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:30:40 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:30:40 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:30:40 PRC] [Debug]{"requestId":"3311jd14u3g1tg6a2iqedxijd5zbyopj","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"value":1}]}
+[26-Apr-2020 16:30:40 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:30:40 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:30:40 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:30:40 PRC] [Debug]success send miot msg ：{"requestId":"3311jd14u3g1tg6a2iqedxijd5zbyopj","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"status":0}]}
+[26-Apr-2020 16:30:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:30:48 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:30:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:30:48 PRC] [Debug]{"requestId":"1yawy2967e27vb5coxxqrcoux1k4qkf6","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"value":0}]}
+[26-Apr-2020 16:30:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:30:48 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:30:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:30:48 PRC] [Debug]success send miot msg ：{"requestId":"1yawy2967e27vb5coxxqrcoux1k4qkf6","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"status":-1,"description":"the mode's value not in range"}]}
+[26-Apr-2020 16:31:33 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:31:33 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:31:33 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:31:33 PRC] [Debug]{"requestId":"60hc6t7y3znuimwzjvrg6fa0n3pqod8f","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"value":0}]}
+[26-Apr-2020 16:31:33 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:31:33 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:31:33 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:31:33 PRC] [Debug]success send miot msg ：{"requestId":"60hc6t7y3znuimwzjvrg6fa0n3pqod8f","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":5,"status":0}]}
+[26-Apr-2020 16:33:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:33:12 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:33:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:33:12 PRC] [Debug]{"requestId":"4f2dhb6b106rcvbsg1cfz3uxd13vvrdv","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":4,"value":6333323}]}
+[26-Apr-2020 16:33:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:33:12 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:33:12 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:33:12 PRC] [Debug]success send miot msg ：{"requestId":"4f2dhb6b106rcvbsg1cfz3uxd13vvrdv","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":4,"status":0}]}
+[26-Apr-2020 16:33:15 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:33:15 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:33:15 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:33:15 PRC] [Debug]{"requestId":"300my464nl1dopnn3a7av8eq11kum6s8","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":4,"value":11882578}]}
+[26-Apr-2020 16:33:15 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:33:15 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:33:15 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:33:15 PRC] [Debug]success send miot msg ：{"requestId":"300my464nl1dopnn3a7av8eq11kum6s8","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":4,"status":0}]}
+[26-Apr-2020 16:33:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:33:19 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:33:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:33:19 PRC] [Debug]{"requestId":"5ogf5rbsbu824gmlzb8lefmxg4c0nsh7","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":3,"value":4463}]}
+[26-Apr-2020 16:33:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:33:19 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:33:19 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:33:19 PRC] [Debug]success send miot msg ：{"requestId":"5ogf5rbsbu824gmlzb8lefmxg4c0nsh7","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":3,"status":0}]}
+[26-Apr-2020 16:33:22 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:33:22 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:33:22 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:33:22 PRC] [Debug]{"requestId":"3d2slvw6jz5dfr300327iu4a15y9nl1m","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":3}]}
+[26-Apr-2020 16:33:22 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:33:22 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:33:22 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:33:22 PRC] [Debug]success send miot msg ：{"requestId":"3d2slvw6jz5dfr300327iu4a15y9nl1m","intent":"get-properties","properties":[{"did":"19-12","siid":2,"piid":3,"status":0,"value":"4000"}]}
+[26-Apr-2020 16:33:26 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 16:33:26 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 16:33:26 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 16:33:26 PRC] [Debug]{"requestId":"1e774h7xm0rpr5396bmdppl9w3rz7r5l","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":2,"value":59}]}
+[26-Apr-2020 16:33:26 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 16:33:26 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 16:33:26 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 16:33:26 PRC] [Debug]success send miot msg ：{"requestId":"1e774h7xm0rpr5396bmdppl9w3rz7r5l","intent":"set-properties","properties":[{"did":"19-12","siid":2,"piid":2,"status":0}]}
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:23:16 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:23:16 PRC] [Debug]{"requestId":"ca00dae3-8269-4810-ac54-b0e17f3ec439","intent":"get-devices"}
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:23:16 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:23:16 PRC] [Debug]success send miot msg ：{"requestId":"ca00dae3-8269-4810-ac54-b0e17f3ec439","intent":"get-devices","devices":[{"did":"19-12","type":"urn:miot-spec-v2:device:light:0000A001:180-light:1:0000C801","name":"\u95e8\u53e3\u706f"}]}
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:23:16 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:23:16 PRC] [Debug]{"requestId":"ca00dae3-8269-4810-ac54-b0e17f3ec439","intent":"subscribe","devices":[{"did":"19-12","subscriptionId":"kj/UONnRgrXNHHpzahCrm4glHGgE5R1Dqye80axyHDBbcBh5paaUmzcSx/CRkJ5Rsbny39R99YRkuBjWNbg5WmR78PV4SYdwGk1iSGJRSrRExrMY/oG5b28Lwb9CcelEjRKdunECeG19DjfLbDACBg=="}]}
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:23:16 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:23:16 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:23:16 PRC] [Debug]success send miot msg ：{"requestId":"ca00dae3-8269-4810-ac54-b0e17f3ec439","intent":"subscribe","devices":[{"did":"19-12","subscriptionId":"kj\/UONnRgrXNHHpzahCrm4glHGgE5R1Dqye80axyHDBbcBh5paaUmzcSx\/CRkJ5Rsbny39R99YRkuBjWNbg5WmR78PV4SYdwGk1iSGJRSrRExrMY\/oG5b28Lwb9CcelEjRKdunECeG19DjfLbDACBg==","status":0}]}
+[26-Apr-2020 17:42:44 PRC] [Warn]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/AliGenieOauth.php, Line : 125
+[26-Apr-2020 17:42:44 PRC] [Warn]request token
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:42:45 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:42:45 PRC] [Debug]{"requestId":"ccc98c2e-7836-44dc-95b6-cb04abf2e2d4","intent":"get-devices"}
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:42:45 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:42:45 PRC] [Debug]success send miot msg ：{"requestId":"ccc98c2e-7836-44dc-95b6-cb04abf2e2d4","intent":"get-devices","devices":[{"did":"19-12","type":"urn:miot-spec-v2:device:light:0000A001:180-light:1:0000C801","name":"\u95e8\u53e3\u706f"}]}
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:42:45 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:42:45 PRC] [Debug]{"requestId":"ccc98c2e-7836-44dc-95b6-cb04abf2e2d4","intent":"subscribe","devices":[{"did":"19-12","subscriptionId":"kj/UONnRgrXNHHpzahCrm4glHGgE5R1Dqye80axyHDBbcBh5paaUmzcSx/CRkJ5Rsbny39R99YRkuBjWNbg5WmR78PV4SYdwGk1iSGJRSrRExrMY/oG5b28Lwb9CcelEjRKdunECeG19DjfLbDACBg=="}]}
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:42:45 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:42:45 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:42:45 PRC] [Debug]success send miot msg ：{"requestId":"ccc98c2e-7836-44dc-95b6-cb04abf2e2d4","intent":"subscribe","devices":[{"did":"19-12","subscriptionId":"kj\/UONnRgrXNHHpzahCrm4glHGgE5R1Dqye80axyHDBbcBh5paaUmzcSx\/CRkJ5Rsbny39R99YRkuBjWNbg5WmR78PV4SYdwGk1iSGJRSrRExrMY\/oG5b28Lwb9CcelEjRKdunECeG19DjfLbDACBg==","status":0}]}
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:42:48 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:42:48 PRC] [Debug]{"requestId":"b3b0f04c-4ab7-4240-bf9a-f536550535a3","intent":"get-devices"}
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:42:48 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:42:48 PRC] [Debug]success send miot msg ：{"requestId":"b3b0f04c-4ab7-4240-bf9a-f536550535a3","intent":"get-devices","devices":[{"did":"19-12","type":"urn:miot-spec-v2:device:light:0000A001:180-light:1:0000C801","name":"\u95e8\u53e3\u706f"}]}
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:42:48 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:42:48 PRC] [Debug]{"requestId":"b3b0f04c-4ab7-4240-bf9a-f536550535a3","intent":"subscribe","devices":[{"did":"19-12","subscriptionId":"kj/UONnRgrXNHHpzahCrm4glHGgE5R1Dqye80axyHDBbcBh5paaUmzcSx/CRkJ5Rsbny39R99YRkuBjWNbg5WmR78PV4SYdwGk1iSGJRSrRExrMY/oG5b28Lwb9CcelEjRKdunECeG19DjfLbDACBg=="}]}
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:42:48 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:42:48 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:42:48 PRC] [Debug]success send miot msg ：{"requestId":"b3b0f04c-4ab7-4240-bf9a-f536550535a3","intent":"subscribe","devices":[{"did":"19-12","subscriptionId":"kj\/UONnRgrXNHHpzahCrm4glHGgE5R1Dqye80axyHDBbcBh5paaUmzcSx\/CRkJ5Rsbny39R99YRkuBjWNbg5WmR78PV4SYdwGk1iSGJRSrRExrMY\/oG5b28Lwb9CcelEjRKdunECeG19DjfLbDACBg==","status":0}]}
+[26-Apr-2020 17:43:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 334
+[26-Apr-2020 17:43:04 PRC] [Debug]***********Miot to me*************
+[26-Apr-2020 17:43:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 335
+[26-Apr-2020 17:43:04 PRC] [Debug]{"requestId":"28ouwtavt982mi9al3f6mz6gs389pv3f","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1},{"did":"19-12","siid":1,"piid":2},{"did":"19-12","siid":1,"piid":3},{"did":"19-12","siid":1,"piid":4}]}
+[26-Apr-2020 17:43:04 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 369
+[26-Apr-2020 17:43:04 PRC] [Debug]success pass get Current userId 当前来请求设备的用户id是 ：19
+[26-Apr-2020 17:43:05 PRC] [Debug]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/MiotGateWay.php, Line : 392
+[26-Apr-2020 17:43:05 PRC] [Debug]success send miot msg ：{"requestId":"28ouwtavt982mi9al3f6mz6gs389pv3f","intent":"get-properties","properties":[{"did":"19-12","siid":1,"piid":1,"status":0,"value":"AiClouds"},{"did":"19-12","siid":1,"piid":2,"status":0,"value":"AiClouds Dev"},{"did":"19-12","siid":1,"piid":3,"status":0,"value":"6001947a70a7"},{"did":"19-12","siid":1,"piid":4,"status":0,"value":"V2.3"}]}
+[26-Apr-2020 17:54:42 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[26-Apr-2020 17:54:42 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[26-Apr-2020 17:57:57 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[26-Apr-2020 17:57:57 PRC] [Info]save online device  fail !!
+[26-Apr-2020 17:57:57 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[26-Apr-2020 17:57:57 PRC] [Info]save offline device  fail !!
+[26-Apr-2020 18:57:32 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[26-Apr-2020 18:57:32 PRC] [Info]save online device  fail !!
+[26-Apr-2020 18:57:37 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[26-Apr-2020 18:57:37 PRC] [Info]save offline device  fail !!
+[26-Apr-2020 20:34:43 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[26-Apr-2020 20:34:43 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[26-Apr-2020 21:39:51 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[26-Apr-2020 21:39:51 PRC] [Info]save online device  fail !!
+[26-Apr-2020 21:39:52 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[26-Apr-2020 21:39:52 PRC] [Info]save offline device  fail !!
+[26-Apr-2020 21:40:26 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[26-Apr-2020 21:40:26 PRC] [Info]save online device  fail !!
+[26-Apr-2020 21:40:31 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[26-Apr-2020 21:40:31 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 00:02:31 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 00:02:31 PRC] [Info]save online device  fail !!
+[27-Apr-2020 00:02:35 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 00:02:35 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 04:51:29 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 04:51:29 PRC] [Info]save online device  fail !!
+[27-Apr-2020 04:51:35 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 04:51:35 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 05:48:33 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[27-Apr-2020 05:48:33 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[27-Apr-2020 10:02:37 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 10:02:37 PRC] [Info]save online device  fail !!
+[27-Apr-2020 10:02:42 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 10:02:42 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 10:32:24 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 10:32:24 PRC] [Info]save online device  fail !!
+[27-Apr-2020 10:32:29 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 10:32:29 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 11:09:27 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 11:09:27 PRC] [Info]save online device  fail !!
+[27-Apr-2020 11:09:37 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 11:09:37 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 17:17:47 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 17:17:47 PRC] [Info]save online device  fail !!
+[27-Apr-2020 17:17:47 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 17:17:47 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 17:49:52 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 17:49:52 PRC] [Info]save online device  fail !!
+[27-Apr-2020 17:49:56 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 17:49:56 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 19:12:51 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[27-Apr-2020 19:12:51 PRC] [Info]save online device  fail !!
+[27-Apr-2020 19:12:56 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[27-Apr-2020 19:12:56 PRC] [Info]save offline device  fail !!
+[27-Apr-2020 23:50:00 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[27-Apr-2020 23:50:00 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[28-Apr-2020 04:52:25 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 04:52:25 PRC] [Info]save online device  fail !!
+[28-Apr-2020 04:52:36 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[28-Apr-2020 04:52:36 PRC] [Error]断主题的后半部分 否 devPub
+[28-Apr-2020 04:56:37 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 04:56:37 PRC] [Info]save online device  fail !!
+[28-Apr-2020 04:56:48 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[28-Apr-2020 04:56:48 PRC] [Error]断主题的后半部分 否 devPub
+[28-Apr-2020 09:11:43 PRC] [Warn]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/AliGenieOauth.php, Line : 125
+[28-Apr-2020 09:11:43 PRC] [Warn]request token
+[28-Apr-2020 14:18:07 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 14:18:07 PRC] [Info]save online device  fail !!
+[28-Apr-2020 14:19:54 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 14:19:54 PRC] [Info]save online device  fail !!
+[28-Apr-2020 14:20:58 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 14:20:58 PRC] [Info]save online device  fail !!
+[28-Apr-2020 14:21:42 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 14:21:42 PRC] [Info]save online device  fail !!
+[28-Apr-2020 14:23:57 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 14:23:57 PRC] [Info]save online device  fail !!
+[28-Apr-2020 14:47:45 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[28-Apr-2020 14:47:45 PRC] [Info]save offline device  fail !!
+[28-Apr-2020 15:25:48 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 15:25:48 PRC] [Info]save online device  fail !!
+[28-Apr-2020 17:35:52 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[28-Apr-2020 17:35:52 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[28-Apr-2020 19:31:06 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 19:31:06 PRC] [Info]save online device  fail !!
+[28-Apr-2020 19:31:08 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[28-Apr-2020 19:31:08 PRC] [Info]save offline device  fail !!
+[28-Apr-2020 19:39:57 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 19:39:57 PRC] [Info]save online device  fail !!
+[28-Apr-2020 19:39:58 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[28-Apr-2020 19:39:58 PRC] [Info]save offline device  fail !!
+[28-Apr-2020 21:24:13 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 21:24:13 PRC] [Info]save online device  fail !!
+[28-Apr-2020 21:24:13 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[28-Apr-2020 21:24:13 PRC] [Info]save offline device  fail !!
+[28-Apr-2020 23:05:36 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[28-Apr-2020 23:05:36 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[28-Apr-2020 23:43:42 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 23:43:42 PRC] [Info]save online device  fail !!
+[28-Apr-2020 23:43:53 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[28-Apr-2020 23:43:53 PRC] [Error]断主题的后半部分 否 devPub
+[28-Apr-2020 23:44:09 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 23:44:09 PRC] [Info]save online device  fail !!
+[28-Apr-2020 23:44:20 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[28-Apr-2020 23:44:20 PRC] [Error]断主题的后半部分 否 devPub
+[28-Apr-2020 23:44:42 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 23:44:42 PRC] [Info]save online device  fail !!
+[28-Apr-2020 23:45:02 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 23:45:02 PRC] [Info]save online device  fail !!
+[28-Apr-2020 23:45:13 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[28-Apr-2020 23:45:13 PRC] [Error]断主题的后半部分 否 devPub
+[28-Apr-2020 23:47:22 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[28-Apr-2020 23:47:22 PRC] [Info]save offline device  fail !!
+[28-Apr-2020 23:52:44 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[28-Apr-2020 23:52:44 PRC] [Info]save online device  fail !!
+[29-Apr-2020 00:01:00 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 00:01:00 PRC] [Info]save online device  fail !!
+[29-Apr-2020 01:04:14 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 01:04:14 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 04:38:24 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 04:38:24 PRC] [Info]save online device  fail !!
+[29-Apr-2020 04:38:29 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 04:38:29 PRC] [Info]save offline device  fail !!
+[29-Apr-2020 06:17:29 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 06:17:29 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 06:18:57 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 06:18:57 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 07:22:33 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 07:22:33 PRC] [Info]save online device  fail !!
+[29-Apr-2020 07:22:38 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 07:22:38 PRC] [Info]save offline device  fail !!
+[29-Apr-2020 09:29:19 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 09:29:19 PRC] [Info]save online device  fail !!
+[29-Apr-2020 09:29:20 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 09:29:20 PRC] [Info]save offline device  fail !!
+[29-Apr-2020 09:38:11 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 09:38:11 PRC] [Info]save online device  fail !!
+[29-Apr-2020 09:38:11 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 09:38:11 PRC] [Info]save offline device  fail !!
+[29-Apr-2020 11:08:18 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 11:08:18 PRC] [Info]save online device  fail !!
+[29-Apr-2020 11:08:51 PRC] [Warn]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/oauth/AliGenieOauth.php, Line : 125
+[29-Apr-2020 11:08:51 PRC] [Warn]request token
+[29-Apr-2020 11:27:40 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 11:27:40 PRC] [Info]save online device  fail !!
+[29-Apr-2020 11:30:40 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 11:30:40 PRC] [Info]save offline device  fail !!
+[29-Apr-2020 12:49:41 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 12:49:41 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 12:50:47 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 12:50:47 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[29-Apr-2020 15:08:36 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 15:08:36 PRC] [Info]save online device  fail !!
+[29-Apr-2020 15:08:41 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 15:08:41 PRC] [Info]save offline device  fail !!
+[29-Apr-2020 21:10:12 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[29-Apr-2020 21:10:12 PRC] [Info]save online device  fail !!
+[29-Apr-2020 21:10:17 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[29-Apr-2020 21:10:17 PRC] [Info]save offline device  fail !!
+[30-Apr-2020 01:15:38 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[30-Apr-2020 01:15:38 PRC] [Info]save online device  fail !!
+[30-Apr-2020 01:15:43 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[30-Apr-2020 01:15:43 PRC] [Info]save offline device  fail !!
+[30-Apr-2020 02:47:26 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[30-Apr-2020 02:47:26 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[30-Apr-2020 02:48:40 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[30-Apr-2020 02:48:40 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[30-Apr-2020 05:34:43 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[30-Apr-2020 05:34:43 PRC] [Info]save online device  fail !!
+[30-Apr-2020 05:34:43 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[30-Apr-2020 05:34:43 PRC] [Info]save offline device  fail !!
+[30-Apr-2020 07:29:26 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[30-Apr-2020 07:29:26 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[01-May-2020 01:05:47 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 01:05:47 PRC] [Info]save online device  fail !!
+[01-May-2020 01:05:47 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 01:05:47 PRC] [Info]save offline device  fail !!
+[01-May-2020 03:15:13 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 03:15:13 PRC] [Info]save online device  fail !!
+[01-May-2020 03:15:18 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 03:15:18 PRC] [Info]save offline device  fail !!
+[01-May-2020 07:58:31 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[01-May-2020 07:58:31 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[01-May-2020 16:45:45 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 16:45:45 PRC] [Info]save online device  fail !!
+[01-May-2020 16:45:50 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 16:45:50 PRC] [Info]save offline device  fail !!
+[01-May-2020 19:22:00 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[01-May-2020 19:22:00 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[01-May-2020 19:35:45 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 19:35:45 PRC] [Info]save online device  fail !!
+[01-May-2020 19:35:46 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 19:35:46 PRC] [Info]save offline device  fail !!
+[01-May-2020 20:09:01 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 20:09:01 PRC] [Info]save online device  fail !!
+[01-May-2020 20:09:13 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[01-May-2020 20:09:13 PRC] [Error]断主题的后半部分 否 devPub
+[01-May-2020 20:14:23 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 20:14:23 PRC] [Info]save offline device  fail !!
+[01-May-2020 20:47:40 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 20:47:40 PRC] [Info]save online device  fail !!
+[01-May-2020 20:47:45 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 20:47:45 PRC] [Info]save offline device  fail !!
+[01-May-2020 22:33:57 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[01-May-2020 22:33:57 PRC] [Info]save online device  fail !!
+[01-May-2020 22:34:08 PRC] [Error]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 191
+[01-May-2020 22:34:08 PRC] [Error]断主题的后半部分 否 devPub
+[01-May-2020 22:39:42 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[01-May-2020 22:39:42 PRC] [Info]save offline device  fail !!
+[02-May-2020 09:25:59 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[02-May-2020 09:25:59 PRC] [Info]save online device  fail !!
+[02-May-2020 09:26:04 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[02-May-2020 09:26:04 PRC] [Info]save offline device  fail !!
+[02-May-2020 13:20:09 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[02-May-2020 13:20:09 PRC] [Info]save online device  fail !!
+[02-May-2020 13:20:09 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[02-May-2020 13:20:09 PRC] [Info]save offline device  fail !!
+[02-May-2020 16:29:42 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[02-May-2020 16:29:42 PRC] [Info]save online device  fail !!
+[02-May-2020 16:29:47 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[02-May-2020 16:29:47 PRC] [Info]save offline device  fail !!
+[02-May-2020 19:19:34 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[02-May-2020 19:19:34 PRC] [Info]save online device  fail !!
+[02-May-2020 19:19:45 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[02-May-2020 19:19:45 PRC] [Info]save offline device  fail !!
+[02-May-2020 20:37:08 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[02-May-2020 20:37:08 PRC] [Info]save online device  fail !!
+[02-May-2020 20:37:08 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[02-May-2020 20:37:08 PRC] [Info]save offline device  fail !!
+[03-May-2020 20:01:02 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[03-May-2020 20:01:02 PRC] [Info]save online device  fail !!
+[03-May-2020 20:01:03 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[03-May-2020 20:01:03 PRC] [Info]save offline device  fail !!
+[03-May-2020 22:19:40 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[03-May-2020 22:19:40 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[03-May-2020 23:35:27 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[03-May-2020 23:35:27 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 01:09:20 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 01:09:20 PRC] [Info]save online device  fail !!
+[04-May-2020 01:09:24 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 01:09:24 PRC] [Info]save offline device  fail !!
+[04-May-2020 01:35:25 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 01:35:25 PRC] [Info]save online device  fail !!
+[04-May-2020 01:35:26 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 01:35:26 PRC] [Info]save offline device  fail !!
+[04-May-2020 03:26:40 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 03:26:40 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 03:33:49 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 03:33:49 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 05:34:18 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 05:34:18 PRC] [Info]save online device  fail !!
+[04-May-2020 05:34:18 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 05:34:18 PRC] [Info]save offline device  fail !!
+[04-May-2020 10:01:41 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 10:01:41 PRC] [Info]save online device  fail !!
+[04-May-2020 10:01:43 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 10:01:43 PRC] [Info]save offline device  fail !!
+[04-May-2020 10:11:38 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 10:11:38 PRC] [Info]save online device  fail !!
+[04-May-2020 10:11:38 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 10:11:38 PRC] [Info]save offline device  fail !!
+[04-May-2020 15:11:05 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 15:11:05 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 19:31:46 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 19:31:46 PRC] [Info]save online device  fail !!
+[04-May-2020 19:31:51 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 19:31:51 PRC] [Info]save offline device  fail !!
+[04-May-2020 19:37:44 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 19:37:44 PRC] [Info]save online device  fail !!
+[04-May-2020 19:37:45 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 19:37:45 PRC] [Info]save offline device  fail !!
+[04-May-2020 19:46:41 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 19:46:41 PRC] [Info]save online device  fail !!
+[04-May-2020 19:46:41 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 19:46:41 PRC] [Info]save offline device  fail !!
+[04-May-2020 21:12:00 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 21:12:00 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 23:07:49 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 31
+[04-May-2020 23:07:49 PRC] [Info]save online device  fail !!
+[04-May-2020 23:07:50 PRC] [Info]/www/wwwroot/aligenie.xuhongv.com/application/api/controller/emq/Emq.php, Line : 59
+[04-May-2020 23:07:50 PRC] [Info]save offline device  fail !!
+[04-May-2020 23:12:09 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 [internal function]: think\Error::appException(Object(think\exception\ErrorException))
+#5 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64
+[04-May-2020 23:12:09 PRC] PHP Fatal error:  Uncaught think\exception\ErrorException: Undefined index: argv in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php:64
+Stack trace:
+#0 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php(64): think\Error::appError(8, 'Undefined index...', '/www/wwwroot/al...', 64, Array)
+#1 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Debug.php(239): think\debug\Html->output(Object(think\Response), Array)
+#2 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Response.php(98): think\Debug::inject(Object(think\Response), '<!DOCTYPE html>...')
+#3 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(52): think\Response->send()
+#4 /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/Error.php(88): think\Error::appException(Object(think\exception\ErrorException))
+#5 [internal function]: think\Error::appShutdown()
+#6 {main}
+  thrown in /www/wwwroot/aligenie.xuhongv.com/thinkphp/library/think/debug/Html.php on line 64

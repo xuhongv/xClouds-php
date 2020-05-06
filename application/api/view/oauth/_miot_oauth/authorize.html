@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;user-scalable=no">
+    <title>登录页面</title>
+    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 全局css样式 -->
+    <style>
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color:white;
+        }
+        #footer {
+            text-align: center;
+            bottom: 15px;
+            position: absolute;
+            width: 100%;
+        }
+
+        #footer a {
+            color: black;
+        }
+
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" method="post">
+        <img width="100" height="100" class="img-responsive center-block" src="https://aligenie.xuhongv.com/icon/aithinker.png">
+        <h4 align="center" style="font-weight: bold;"> AiClouds 3.0 </h4>
+        <label for="inputEmail" class="sr-only">请输入授权码</label>
+        <input name="username" id="inputEmail" class="form-control" style="margin-top: 45px;" placeholder="请输入个人授权码" required autofocus>
+        <button class="btn btn-lg btn-primary btn-block"   style="margin-top: 20px;" type="submit">授权登录</button>
+    </form>
+</div>
+<div id="footer"><a>Copyright © 2019 安信可科技</a></div>
+</body>
+</html>
+
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>个人中心</title>
+    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/css/frozenui.css"/>
+    <link rel="stylesheet" href="__STATIC__/frozenui-2.0.0/release/demo/css/style.css">
+
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.0/lib/index.css">
+
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.0/lib/vant.min.js"></script>
+
+    <!-- 引入组件 -->
+    <script type="text/javascript" src="__STATIC__/colorpicker/farbtastic.js"></script>
+    <link rel="stylesheet" href="__STATIC__/colorpicker/farbtastic.css" type="text/css" />
+
+
+    <!-- 全局css样式 -->
+    <style>
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: white;
+        }
+
+        #footer {
+            text-align: center;
+            bottom: 15px;
+            position: absolute;
+            width: 100%;
+        }
+
+        #footer a {
+            color: black;
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<!--<div class="container">-->
+
+<!--    <img width="100" height="100" class="img-responsive center-block"-->
+<!--         src="https://www.xuhonys.cn/icon/logo.jpeg">-->
+<!--    <h4 align="center" style="font-weight: bold;margin-top: 20px"> 小徐智能 </h4>-->
+
+
+<!--    <label for="inputPhone" class="sr-only">手机号码</label>-->
+<!--    <input type="number" name="phone" id="inputPhone" class="form-control" style="margin-top: 45px;"-->
+<!--           placeholder="手机号码" required autofocus>-->
+
+<!--    <section class="ui-input-wrap ui-border-t" style="margin-top: 35px">-->
+<!--        <div class="ui-input ui-border-radius">-->
+<!--            <input type="number" name="code" value="" placeholder="输入验证码" autofocus>-->
+<!--        </div>-->
+<!--        <button class="ui-btn" onclick="getCode()">获取验证码</button>-->
+<!--    </section>-->
+
+<!--    <button class="btn btn-lg btn-primary btn-block" style="margin-top: 20px;" type="submit">-->
+<!--        授权登录-->
+<!--    </button>-->
+
+
+<!--</div>-->
+
+
+
+<form><input type="text" id="color" name="color" value="#123456" /></form>
+
+<div id="colorpicker"></div>
+
+
+
+<script>
+
+    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    var useragent = navigator.userAgent;
+    if (useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        // 这里警告框会阻塞当前页面继续加载
+        //alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+        document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    }
+
+
+
+
+        $(document).ready(function() {
+
+            $('#colorpicker').farbtastic('#color');
+
+        });
+
+
+
+    var Vue = window.Vue;
+    var vant = window.vant;
+
+    // 注册 Lazyload 组件
+    Vue.use(vant.Lazyload);
+
+    // 调用函数式组件
+    vant.Toast('提示');
+
+
+
+    function getCode() {
+
+        //获取输入到手机号码
+        let phone = $("#inputPhone").val();
+
+
+        var flag = false;
+        var message = "";
+
+        var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        if (phone == '') {
+            message = "手机号码不能为空！";
+        } else if (phone.length != 11) {
+            message = "请输入有效的手机号码！";
+        } else if (!myreg.test(phone)) {
+            message = "请输入有效的手机号码！";
+        } else if (checkPhoneIsExist()) {
+            message = "该手机号码已经被绑定！";
+        } else
+            flag = true;
+
+        //提示错误失败信息
+        if (!flag){
+            alert('' + message)
+            return;
+        }
+        console.log('value:' + message)
+
+
+        // $.ajax({
+        //     type: 'POST',
+        //     url: "{:url('BindPhoneActivity/userCenter')}",
+        //     contentType: "application/json; charset=utf-8",
+        //     dataType: "json",
+        //     data: JSON.stringify(bindInfo),
+        //     success: function (data) {
+        //         alert("" + data.msg);
+        //         //关闭这个窗口，返回微信公众号主页
+        //         wx.closeWindow();
+        //     }
+        // });
+
+
+    }
+
+
+</script>
+
+</body>
+
+
+</html>
+
+
