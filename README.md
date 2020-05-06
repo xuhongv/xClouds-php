@@ -66,11 +66,11 @@
 
 - https://www.bilibili.com/video/BV1q4411e7MB
 
-&nbsp;&nbsp;&nbsp;&nbsp; 数据库导入  [AiClouds3.0 MySQL.sql](/AiClouds3.0 MySQL.sql) ,
+&nbsp;&nbsp;&nbsp;&nbsp; 数据库导入  [AiClouds3.0 MySQL.sql](AiClouds3.0 MySQL.sql) ,
 
 # 感谢：
 
-- PHP微信对接：https://github.com/zoujingli/WeChatDeveloper
+- PHP微信对接框架：https://github.com/zoujingli/WeChatDeveloper
 - PHP Oauth2.0：https://github.com/bshaffer/oauth2-server-php
 - PHP 框架：http://www.thinkphp.cn
 - 乐鑫物联网操作系统：https://github.com/espressif/esp-idf
