@@ -59,16 +59,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;  因为此为基于 Tp5 国产框架上开发，需要一定的PHP基础和云端服务器部署灯开发基础；
 
 * 阿里云或腾讯云这些运维商购买一台远程服务器，以及一个备案通过的域名；
+* 代码中数据库使用的是 MySQL , 推荐使用 LNMP 环境 Linux + Nginx +MySQL5.6 + PHP7.0 ，注意： **PHP务必在 7.0 以上**；
 * 微信公众号一个，可用个人测试号或企业性质的服务号;
 
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; Linux 环境建议使用宝塔bt软件实现，详情可以参考我之前的视频：
 
-```
-cd /Ai-examples/1.SmartConfig_AirKiss_To_MQTT
-make menuconfig
-make -j8 flash 
-make monitor
-```
+- https://www.bilibili.com/video/BV1q4411e7MB
+
+&nbsp;&nbsp;&nbsp;&nbsp; 数据库导入  [AiClouds3.0 MySQL.sql](/AiClouds3.0 MySQL.sql) ,
 
 # 感谢：
 
