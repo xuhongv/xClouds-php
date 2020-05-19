@@ -111,7 +111,7 @@ class MiotGateWay extends BaseController
             for ($i = 0; $i < $devicesNums; $i++) {
                 $devices[$i] = [
                     'did' => $userId . '-' . (string)($device[$i]['device_id']),
-                    'type' => 'urn:miot-spec-v2:device:light:0000A001:180-light:1:0000C801', //urn:miot-spec-v2:device:light:0000A001:180-light:1:0000C801
+                    'type' => config('devicesAttr.' . $device[$i]['type'])[$this->cloudsType]['model'],
                     'name' => $device[$i]['alias'],
                 ];
             }
@@ -191,6 +191,11 @@ class MiotGateWay extends BaseController
                 $actionName = config('devicesAttr.' . $device->type)[$this->cloudsMine][$this->cloudsType]['properties_control']['siid' . $deviceMsg->siid]['piid' . $deviceMsg->piid];
                 $controlValue = (int)((($controlValue - 1000) / 9000) * (6500 - 2700) + 2700);
                 break;
+            case 'color':
+                $actionName = config('devicesAttr.' . $device->type)[$this->cloudsMine][$this->cloudsType]['properties_control']['siid' . $deviceMsg->siid]['piid' . $deviceMsg->piid];
+                $controlValue = config('devicesAttr.' . $device->type)[$this->cloudsMine][$this->cloudsType]['properties_control_value_convert']['color'][$controlValue];
+                break;
+
             default:
                 $actionName = config('devicesAttr.' . $device->type)[$this->cloudsMine][$this->cloudsType]['properties_control']['siid' . $deviceMsg->siid]['piid' . $deviceMsg->piid];
                 break;
@@ -356,7 +361,7 @@ class MiotGateWay extends BaseController
         $info = Request::instance()->header('User-Token');
 
         //生成日志
-        utilsSaveLogs('***********Miot to me*************', 3);
+        //utilsSaveLogs('***********Miot to me*************', 3);
         utilsSaveLogs($poststr, 3);
         //utilsSaveLogs("token:".$info, 3);
 
@@ -414,7 +419,7 @@ class MiotGateWay extends BaseController
             default:
                 break;
         }
-        utilsSaveLogs('success send miot msg ：' . json_encode($repository), 3);
+        //utilsSaveLogs('success send miot msg ：' . json_encode($repository), 3);
         return json($repository);
     }
 

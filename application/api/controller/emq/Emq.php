@@ -47,8 +47,6 @@ class Emq extends Controller
             'online' => 0, //离线
         ];
 
-        // utilsSaveLogs("clientId:".$clientId);
-
         try {
             $Device = model('Device')->save($updata, ['mac' => $clientId]);
         } catch (\Exception $exception) {
@@ -170,10 +168,11 @@ class Emq extends Controller
                     //utilsSaveLogs('from php request...,return', 4);
                     return '';
                 }
-                if (strlen($deviceMsg['topic']) < 25)
+                if (strlen($deviceMsg['topic']) < 19)
                     return '';
                 //把topic字符串分割为数组
                 $arrTopic = explode('/', $deviceMsg['topic']);
+                utilsSaveLogs('from php request $arrTopic :'.json_encode($arrTopic), 4);
                 //判断 clientId和主题前部分是否一致？
                 if ($deviceMsg['from_client_id'] != $arrTopic[2]) {
                     return '';

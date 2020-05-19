@@ -57,11 +57,11 @@
             <p class="weui-msg__desc">购买一个吧！<a href="javascript:void(0);">淘宝链接</a></p>
         </div>
 
-            <div class="weui-msg__opr-area">
-                <p class="weui-btn-area">
-                    <a href="javascript:history.back();" class="weui-btn weui-btn_default">返回主页</a>
-                </p>
-            </div>
+        <div class="weui-msg__opr-area">
+            <p class="weui-btn-area">
+                <a href="javascript:history.back();" class="weui-btn weui-btn_default">返回主页</a>
+            </p>
+        </div>
         <!--<div class="weui-msg__extra-area">-->
         <!--    <div class="weui-footer">-->
         <!--        <p class="weui-footer__links">-->
@@ -129,7 +129,6 @@
     }
 
     $iosMask.on('click', hideActionSheet);
-
     //隐藏
     $('#iosActionsheetCancel').on('click', hideActionSheet);
     //重命名弹窗
@@ -195,10 +194,15 @@
     });
 
     $("ul li").click(function () {
+        // currentDevice = deviceList[$(this).index()];
+        // console.log("device:", JSON.stringify(currentDevice));
+        // $iosActionsheet.addClass('weui-actionsheet_toggle');
+        // $iosMask.fadeIn(200);
+
         currentDevice = deviceList[$(this).index()];
-        console.log("device:", JSON.stringify(currentDevice));
-        $iosActionsheet.addClass('weui-actionsheet_toggle');
-        $iosMask.fadeIn(200);
+        let obj = deviceList[$(this).index()]
+        mHref = "{:url('DeviceListActivity/intoControl')}";
+        window.location.href = mHref + '?uuid=' + obj.uuid + "&user_id=" + obj.user_id;
     });
 </script>
 
