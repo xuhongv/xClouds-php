@@ -41,14 +41,44 @@
 # xClouds-devices for  PHP  开发框架
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;  认识我的人都知道，我和乐鑫 ESP8266 芯片有一个解不开的缘分，我通过此芯片认识很多志同道合的的小伙伴，也让我逐渐地找到了自己的人生价值，所以，我会以自己擅长的 Wi-Fi模块二次开发，带领大家快速体验和商业化使用此物美价廉的芯片；
+&nbsp;&nbsp;&nbsp;&nbsp; **PHP是世界上最好的语言，不接受任何反驳**。 哈哈，这种弱语言，是真的非常适合那些小项目和快速入门，现在就是基于国产框架 TP5 上开发的；
 
+&nbsp;&nbsp;&nbsp;&nbsp; 只有适合自己开发的才是最好的。无论是采用 PHP 、NodeJS、Java 等服务器语言，只有稳定快速实现自己的需要即可，如有能力，欢迎服务器开发者一起加入我们这里开拓更多版本，比如 Java ，我们可免费提供技术支持和提供开发硬件资源；
 
-&nbsp;&nbsp;&nbsp;&nbsp;  本框架基于**ESP8266_RTOS_SDK v3.0** 上二次开发，采用C语言开发，并非 **arduino** 开发；
+## 文件主要目录
 
-## 例程简介
-
-* [1.SmartConfig_AirKiss_To_MQTT](./Ai-examples/1.SmartConfig_AirKiss_To_MQTT) : 简单模板，实现 smartconfig 一键配网 和 微信公众号 airkiss 配网，并实现连接 MQTT 服务器的通讯实现上下发数据的例子；
+```
+├─application 应用目录（可设置）
+│ ├─common 公共模块目录（可更改）
+│ ├─API 天猫精灵/小爱同学等第三方应用的API对外接口
+│ ├─wechat 微信公众号代码，包括配网和控制
+│ ├─index 模块目录(可更改)
+│ │ ├─config.php 模块配置文件
+│ │ ├─common.php 模块函数文件
+│ │ ├─controller 控制器目录
+│ │ ├─model 模型目录
+│ │ ├─view 视图目录
+│ │ └─ ... 更多类库目录
+│ ├─command.php 命令行工具配置文件
+│ ├─common.php 应用公共（函数）文件
+│ ├─config.php 应用（公共）配置文件
+│ ├─database.php 数据库配置文件
+│ ├─tags.php 应用行为扩展定义文件
+│ └─route.php 路由配置文件
+├─extend 扩展类库目录（oauth2.0 微信对接第三方库）
+├─public WEB 部署目录（对外访问目录）
+│ ├─static 静态资源存放目录(css,js,image)
+│ ├─index.php 应用入口文件
+│ ├─router.php 快速测试文件
+│ └─.htaccess 用于 apache 的重写
+├─runtime 应用的运行时目录（可写，可设置）
+├─vendor 第三方类库目录（Composer）
+├─build.php 自动生成定义文件（参考）
+├─composer.json composer 定义文件
+├─LICENSE.txt 授权说明文件
+├─README.md README 文件
+├─think 命令行入口文件
+```
 
 ---
 
@@ -59,20 +89,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;  因为此为基于 Tp5 国产框架上开发，需要一定的PHP基础和云端服务器部署灯开发基础；
 
 * 阿里云或腾讯云这些运维商购买一台远程服务器，以及一个备案通过的域名；
+* 代码中数据库使用的是 MySQL , 推荐使用 LNMP 环境 Linux + Nginx +MySQL5.6 + PHP7.0 ，注意： **PHP务必在 7.0 以上**；
 * 微信公众号一个，可用个人测试号或企业性质的服务号;
 
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; Linux 环境建议使用宝塔bt软件实现，详情可以参考我之前的视频：
 
-```
-cd /Ai-examples/1.SmartConfig_AirKiss_To_MQTT
-make menuconfig
-make -j8 flash 
-make monitor
-```
+- https://www.bilibili.com/video/BV1q4411e7MB
+
+&nbsp;&nbsp;&nbsp;&nbsp; 数据库导入根目录的 **AiClouds3.0 MySQL.sql** 文件，因里面有一些限制关系，需要在**144 行**左右，修改一个参数为 您的当前数据库名字，切记！
+
+
 
 # 感谢：
 
-- PHP微信对接：https://github.com/zoujingli/WeChatDeveloper
+- PHP微信对接框架：https://github.com/zoujingli/WeChatDeveloper
 - PHP Oauth2.0：https://github.com/bshaffer/oauth2-server-php
 - PHP 框架：http://www.thinkphp.cn
 - 乐鑫物联网操作系统：https://github.com/espressif/esp-idf
