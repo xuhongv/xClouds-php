@@ -181,7 +181,7 @@ class DeviceListActivity extends BaseWeChat
         $token = Aes::opensslDecrypt($this->localUser['token'], config('encryptKey.AES_WECHAT_UNIONID_TOKEN'));
         $token = json_decode($token);
 //        return $this->utlisResponse('token校验！'.json_encode($token), false);
-        echo 'test 002';
+
         if ($token) {
 
             //判断有效期 是否处于有效期内？否则需要重新获取
@@ -192,7 +192,7 @@ class DeviceListActivity extends BaseWeChat
             if (!isset($token->name)) {
                 return $this->utlisResponse('非微信用户！', false);
             }
-            echo 'test 001';
+
             //判断用户已经注册？
             try {
                 $user = model('User')->get(['openId' => $token->name]);
@@ -207,7 +207,7 @@ class DeviceListActivity extends BaseWeChat
             return $this->utlisResponse('非法用户！', false);
         }
 
-        echo 'test 002';
+
 
         //第四步：判断设备是否已经注册以及该产品是否注册
         try {
@@ -215,33 +215,33 @@ class DeviceListActivity extends BaseWeChat
         } catch (\Exception $exception) {
             return $this->utlisResponse('' . $exception->getMessage(), false);
         }
+
         //第五步：判断是否在线
         if ($device && $device['online']) {
             $deviceProduct = config('devicesAttr.' . $device['type']);
-            var_dump(array("deviceId" => $deviceProduct['htmlControl'], "deviceName" => $device['alias'], 'uuid' => $device['uuid'], 'type' => $device['type']));
             if ($deviceProduct) {
-                $this->redirect($deviceProduct['htmlControl'], array("deviceId" => $device['device_id'], "deviceName" => $device['alias'], 'uuid' => $device['uuid'], 'type' => $device['type']));
+                $this->redirect($deviceProduct['htmlControl'], array("deviceId" => $device['device_id'], "deviceName" => $device['alias']
+                , 'uuid' => $device['uuid'], 'type' => $device['type']));
             }
         } else  return $this->utlisResponse('设备离线或者不存在', false);;
 
     }
 
 
-    public function control2rgb($deviceId, $deviceName, $uuid, $type ,$attr)
+    public function control2rgb($deviceId, $deviceName, $uuid, $type)
     {
-//        $data = [
-//            'deviceId' => $deviceId,
-//            'name' => $deviceName,
-//            'uuid' => $uuid,
-//            'type' => $type,
-//            'attr' => $attr,
-//            'topicSub' => getDeviceTopicSub($type, $uuid),
-//            'topicPub' => getDeviceTopicPub($type, $uuid),
-//            'clientId' => 'wc_' . md5(time()),
-//            'mqtt' => config('mqtt'),
-//        ];
-//        $this->assign('config', json_encode($data));
-//        return $this->fetch('', ['device' => $data]);
+        $data = [
+            'deviceId' => $deviceId,
+            'name' => $deviceName,
+            'uuid' => $uuid,
+            'type' => $type,
+            'topicSub' => getDeviceTopicSub($type, $uuid),
+            'topicPub' => getDeviceTopicPub($type, $uuid),
+            'clientId' => 'wc_' . md5(time()),
+            'mqtt' => config('mqtt'),
+        ];
+        $this->assign('config', json_encode($data));
+        return $this->fetch('', ['device' => $data]);
       return '';
     }
 

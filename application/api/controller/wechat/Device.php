@@ -79,10 +79,11 @@ class Device extends BaseWeChatController
             if ($user->rank) {
                 switch ($user->rank) {
                     //普通用户，不允许注册设备
+//                    case 1:
+//                        return $this->utlisResponse('非法设备或设备不存在，请购买我方设备！', false);
+//                        break;
+                    //内部测试人员，仅仅可以绑定5个设备
                     case 1:
-                        return $this->utlisResponse('非法设备或设备不存在，请购买我方设备！', false);
-                        break;
-                    //内部测试人员，仅仅可以绑定15个设备
                     case 2:
                         //获取当前已经绑定的设备数量
                         try {
@@ -92,8 +93,8 @@ class Device extends BaseWeChatController
                             return $this->utlisResponse('' . $exception->getMessage(), false);
                         }
 
-                        if ($number > 14) {
-                            return $this->utlisResponse('内部测试人员最多绑定20个设备！请主动删除！', false);
+                        if ($number > 5) {
+                            return $this->utlisResponse('内部测试人员最多绑定5个设备！请主动删除！', false);
                         }
                         break;
                     //管理员

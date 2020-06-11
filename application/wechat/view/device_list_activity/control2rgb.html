@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>七彩灯</title>
-    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"
-          rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 
@@ -28,7 +27,6 @@
     <link href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css" rel="stylesheet">
 
 
-
     <!-- 引入组件 -->
     <script type="text/javascript" src="__STATIC__/colorpicker/farbtastic.js"></script>
     <link rel="stylesheet" href="__STATIC__/colorpicker/farbtastic.css" type="text/css"/>
@@ -38,7 +36,7 @@
     <link rel="stylesheet" href="__STATIC__/weui+/css/weuix.css"/>
 
     <script src="__STATIC__/weui+/js/zepto.min.js"></script>
-    <script src = "__STATIC__/weui+/js/zepto.weui.js"></script>
+    <script src="__STATIC__/weui+/js/zepto.weui.js"></script>
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
@@ -54,6 +52,7 @@
             margin-top: 40px;
             border: white;
         }
+
         .ui-btn-lg {
             margin-top: 40px;
             border: white;
@@ -62,64 +61,73 @@
 
 </head>
 <body ontouchstart>
+<section class="ui-container">
+    <section id="layout">
+        <div id="app" class="demo-item">
+            <div id="load" class="ui-loading-block ui-flex show">
+                <div class="ui-loading-cnt">
+                    <i class="ui-loading-bright"></i>
+                    <p>正在加载中...</p>
+                </div>
+            </div>
+            <div class="ui-flex ui-flex-pack-center">
+                <!--v-on:change="headleChangeColor"-->
+                <color-picker v-bind="color" @input="onAlter" v-on:change="headleChangeColor"></color-picker>
+            </div>
 
 
-<div id="app" class="demo-item">
-
-    <div class="ui-flex ui-flex-pack-center">
-        <color-picker v-bind="color" @input="onAlter"></color-picker>
-    </div>
-
-
-    <div class="ui-btn-group ui-border-t" >
-        <button  @click="clickRed" class="ui-btn-lg" style="color: rgb(255,0,0)">
-            红色
-        </button>
-        <button  @click="clickBlue" class="ui-btn-lg" style="color: rgb(0,255,0)">
-            蓝色
-        </button>
-        <button  @click="clickGreen"  class="ui-btn-lg" style="color: rgb(0,0,255)">
-            绿色
-        </button>
-    </div>
+            <div class="ui-btn-group ui-border-t">
+                <button @click="clickRed" class="ui-btn-lg" style="color: rgb(255,0,0)">
+                    红色
+                </button>
+                <button @click="clickGreen" class="ui-btn-lg" style="color: rgb(0,255,0)">
+                    绿色
+                </button>
+                <button @click="clickBlue" class="ui-btn-lg" style="color: rgb(0,0,255)">
+                    蓝色
+                </button>
+            </div>
 
 
-    <div style="padding: 10px" >
-        <p class="ui-flex-pack-left" style="font-size: xx-small ; color: red" >红色调节: </p>
-        <vue-slider v-model="valueSlideRed" v-bind="sliderStyle"
-                    :lazy="true"
-                    :process-style="{ backgroundColor: 'red' }"
-                    :tooltip-style="{ backgroundColor: 'red', borderColor: 'red' }"
-                    @change="RedSliderCallback">
-        </vue-slider>
-    </div>
+            <!--    <div style="padding: 10px">-->
+            <!--        <p class="ui-flex-pack-left" style="font-size: xx-small ; color: red">红色调节: </p>-->
+            <!--        <vue-slider v-model="valueSlideRed" v-bind="sliderStyle"-->
+            <!--                    :lazy="true"-->
+            <!--                    :process-style="{ backgroundColor: 'red' }"-->
+            <!--                    :tooltip-style="{ backgroundColor: 'red', borderColor: 'red' }"-->
+            <!--                    @change="RedSliderCallback">-->
+            <!--        </vue-slider>-->
+            <!--    </div>-->
 
-    <div style="padding: 10px">
-        <div class="ui-flex-pack-left" style="font-size: xx-small ; color: green"  >绿色调节: </div>
-        <vue-slider v-model="valueSlideGreen" v-bind="sliderStyle"
-                    :lazy="true"
-                    :process-style="{ backgroundColor: 'green' }"
-                    :tooltip-style="{ backgroundColor: 'green', borderColor: 'green' }"
-                    @change="GreenSliderCallback">
-        </vue-slider>
-    </div>
+            <!--    <div style="padding: 10px">-->
+            <!--        <div class="ui-flex-pack-left" style="font-size: xx-small ; color: green">绿色调节:</div>-->
+            <!--        <vue-slider v-model="valueSlideGreen" v-bind="sliderStyle"-->
+            <!--                    :lazy="true"-->
+            <!--                    :process-style="{ backgroundColor: 'green' }"-->
+            <!--                    :tooltip-style="{ backgroundColor: 'green', borderColor: 'green' }"-->
+            <!--                    @change="GreenSliderCallback">-->
+            <!--        </vue-slider>-->
+            <!--    </div>-->
 
-    <div style="padding: 10px">
-        <div class="ui-flex-pack-left" style="font-size: xx-small ; color: blue"  >蓝色调节: </div>
-        <vue-slider v-model="valueSlideBlue" v-bind="sliderStyle"
-                    :lazy="true"
-                    :process-style="{ backgroundColor: 'blue' }"
-                    :tooltip-style="{ backgroundColor: 'blue', borderColor: 'blue' }"
-                    @change="BlueSliderCallback">
-        </vue-slider>
-    </div>
-    <div class="weui-footer weui-footer_fixed-bottom">
-        <p class="weui-footer__text">Copyright &copy; 半颗心脏</p>
-    </div>
+            <!--    <div style="padding: 10px">-->
+            <!--        <div class="ui-flex-pack-left" style="font-size: xx-small ; color: blue">蓝色调节:</div>-->
+            <!--        <vue-slider v-model="valueSlideBlue" v-bind="sliderStyle"-->
+            <!--                    :lazy="true"-->
+            <!--                    :process-style="{ backgroundColor: 'blue' }"-->
+            <!--                    :tooltip-style="{ backgroundColor: 'blue', borderColor: 'blue' }"-->
+            <!--                    @change="BlueSliderCallback">-->
+            <!--        </vue-slider>-->
+            <!--    </div>-->
 
-</div>
-</div>
 
+            <div class="weui-footer weui-footer_fixed-bottom">
+                <p class="weui-footer__text">Copyright &copy; 半颗心脏</p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+</section>
 
 <script>
 
@@ -132,9 +140,51 @@
         document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
         document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
     }
+    $("#load").show();
 
-    console.log("hello wo")
+    function rgbToHsl(r, g, b) {
 
+        r /= 255, g /= 255, b /= 255;
+
+        var max = Math.max(r, g, b), min = Math.min(r, g, b);
+
+        var h, s, l = (max + min) / 2;
+
+        if (max == min) {
+
+            h = s = 0; // achromatic
+
+        } else {
+
+            var d = max - min;
+
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+            switch (max) {
+
+                case r:
+                    h = (g - b) / d + (g < b ? 6 : 0);
+                    break;
+
+                case g:
+                    h = (b - r) / d + 2;
+                    break;
+
+                case b:
+                    h = (r - g) / d + 4;
+                    break;
+
+            }
+
+            h /= 6;
+
+        }
+
+        return [Math.floor(h * 100), Math.round(s * 100), Math.round(l * 100)];
+
+    }
+
+    let connectInfo = {$config};
 
     let options = {
         protocolVersion: 4, //MQTT连接协议版本
@@ -142,29 +192,12 @@
         reconnectPeriod: 1000, //1000毫秒，两次重新连接之间的间隔
         connectTimeout: 30 * 1000, //1000毫秒，两次重新连接之间的间隔
         resubscribe: true, //如果连接断开并重新连接，则会再次自动订阅已订阅的主题（默认true）
-        clientId: 'html',
-        password: 'xuhong123',
-        username: 'admin',
+        clientId: connectInfo.clientId,
+        password: connectInfo.mqtt.password,
+        username: connectInfo.mqtt.username,
     };
 
-    let mqttClient = mqtt.connect('wss://www.xuhonys.cn:443/mqtt',options);
-
-    //服务器连接异常的回调
-    mqttClient.on("error", function (error) {
-        console.log(" 服务器 error 的回调" + error)
-
-    })
-
-    //服务器重连连接异常的回调
-    mqttClient.on("reconnect", function () {
-        console.log(" 服务器 reconnect的回调")
-
-    })
-    //服务器连接异常的回调
-    mqttClient.on("offline", function (errr) {
-        console.log(" 服务器offline的回调")
-    })
-
+    let mqttClient = mqtt.connect(connectInfo.mqtt.url, options);
 
     var ColorPicker = window.VueColorPicker;
     let app = new Vue({
@@ -175,6 +208,7 @@
         },
         data: {
             clientMqtt: mqttClient,
+            topicSub: connectInfo.topicSub,
             valueSlideRed: 0,
             valueSlideGreen: 0,
             valueSlideBlue: 0,
@@ -185,7 +219,7 @@
                 luminosity: 50,
                 alpha: 1
             },
-            sliderStyle:{
+            sliderStyle: {
                 width: '100%',
                 show: false,
                 value: [0, 100],
@@ -197,46 +231,158 @@
                     "bottom",
                     "top"
                 ]
+            },
+            controlData: {
+                header: {
+                    name: "SetColor",
+                    namespace: "AliGenie.Iot.DeviceCenter.Mine",
+                    payLoadVersion: 1
+                },
+                payload: {
+                    attribute: "color",
+                    deviceId: "",
+                    deviceType: "light",
+                    value: "Blue"
+                }
             }
         },
         methods: {
-            onAlter: function (hue) {
-                if (this.colorAlterCounts++ > 20) {
-                    this.colorAlterCounts = 0;
-                    console.log(('onInput'), this.color);
-                    this.color.hue = hue;
-                    this.clientMqtt.publish('/World','rgb')
-                }
+            hslToRgb: function (h, s, l) {
+                var r, g, b;
 
+
+                if (s == 0) {
+
+                    r = g = b = l; // achromatic
+
+                } else {
+
+                    var hue2rgb = function hue2rgb(p, q, t) {
+
+                        if (t < 0) t += 1;
+
+                        if (t > 1) t -= 1;
+
+                        if (t < 1 / 6) return p + (q - p) * 6 * t;
+
+                        if (t < 1 / 2) return q;
+
+                        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+
+                        return p;
+
+                    }
+
+
+                    var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+
+                    var p = 2 * l - q;
+
+                    r = hue2rgb(p, q, h + 1 / 3);
+
+                    g = hue2rgb(p, q, h);
+
+                    b = hue2rgb(p, q, h - 1 / 3);
+                }
+                return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
             },
+            headleChangeColor: function (hue) {
+                //console.log(('headleChangeColor'), hue);
+                this.color.hue = hue;
+                var obj = this.hslToRgb(hue / 360, 1, 0.5);
+                this.controlData.payload.value = obj
+                this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
+                console.log(('color'), obj);
+            },
+            onAlter: function (color) {
+                // console.log(`颜色值改变事件：${color}`)
+                // //console.log(('onInput'), this.hslToRgb(hue.hue,hue.hue.luminosity,hue.saturation));
+                // if (this.colorAlterCounts++ > 20) {
+                //     this.colorAlterCounts = 0;
+                //     //console.log(('onInput'), this.color);
+                //     this.color.hue = color;
+                //     //this.clientMqtt.publish('/rgbLight/f4cfa25b1422/devSub','rgb')
+                // }
+            }
+            ,
             clickRed: function () {
-                console.log(('clickRed'));
-            },
+                this.controlData.payload.value = "Red"
+                //this.color.hue = 0;
+                this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
+            }
+            ,
             clickBlue: function () {
-                console.log(('clickBlue'));
-            },
+                this.controlData.payload.value = "Blue"
+                //this.color.hue = 215;
+                this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
+            }
+            ,
             clickGreen: function () {
-                console.log(('clickGreen'));
-            },
-            RedSliderCallback:function (value) {
+                //this.color.hue = 135;
+                this.controlData.payload.value = "Green"
+                this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
+            }
+            ,
+            RedSliderCallback: function (value) {
                 this.valueSlideRed = value
-                console.log(('RedSliderCallback')+value);
-                console.log(('RedSliderCallback')+this.valueSlideRed);
-            },
-            GreenSliderCallback:function (value) {
+                console.log(('RedSliderCallback') + value);
+                console.log(('RedSliderCallback') + this.valueSlideRed);
+            }
+            ,
+            GreenSliderCallback: function (value) {
                 this.valueSlideGreen = value
-                console.log(('RedSliderCallback')+this.valueSlideRed);
-            },
-            BlueSliderCallback:function (value) {
+                console.log(('RedSliderCallback') + this.valueSlideRed);
+            }
+            ,
+            BlueSliderCallback: function (value) {
                 this.valueSlideBlue = value
-                console.log(('RedSliderCallback')+this.valueSlideRed);
-            },
+                console.log(('RedSliderCallback') + this.valueSlideRed);
+            }
+            ,
         }
+    })
+
+    //服务器连接异常的回调
+    mqttClient.on("error", function (error) {
+        console.log(" 服务器 error 的回调" + error)
     });
 
+    //服务器重连连接异常的回调
+    mqttClient.on("reconnect", function () {
+        console.log(" 服务器 reconnect的回调")
+    });
+    //服务器连接异常的回调
+    mqttClient.on("offline", function (errr) {
+        console.log(" 服务器offline的回调")
+    });
 
+    function buf2string(buffer) {
+        var arr = Array.prototype.map.call(new Uint8Array(buffer), x => x)
+        var str = '';
+        for (var i = 0; i < arr.length; i++) {
+            str += String.fromCharCode(arr[i])
+        }
+        return str
+    }
 
+    //服务器连接异常的回调
+    mqttClient.on("message", function (client, topic, payload) {
+        $("#load").hide();
+        let attr = JSON.parse(buf2string(topic)).attr;
+        //console.log(" 收到消息回调", attr);
+        var rgbValue = rgbToHsl(attr[1].rgb[0], attr[1].rgb[1], attr[1].rgb[2]);
+        app._data.color.hue = rgbValue[0] / 100 * 360
+    });
 
+    //服务器连接ok的回调
+    mqttClient.on("connect", function (errr) {
+        $("#load").hide();
+        //console.log(" 服务器connect的回调", connectInfo.topicPub)
+        mqttClient.subscribe(connectInfo.topicPub)
+        app._data.controlData.header.name = 'Query';
+        mqttClient.publish(connectInfo.topicSub, JSON.stringify(app._data.controlData))
+        app._data.controlData.header.name = 'SetColor'
+    });
 
 
 </script>

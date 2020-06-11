@@ -15,9 +15,9 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -243,8 +243,8 @@ return [
     // 微信公众号
     'wechatConfig' => [
         'token' => 'xuhong2019',
-        'appid' => 'wxaec2f6c8cf1615d2',
-        'appsecret' => '70b1d304e4ca6f3b8425d9f251887bef',
+        'appid' => 'wx11f098dfa812b8c5',
+        'appsecret' => 'a0eb49aaa19ebefeae32971b2bcfac81',
         'cache_path' => '/www/wwwroot/aligenie.xuhongv.com/runtime/wechatCache',
         'weichatDomain'=>'https://aligenie.xuhongv.com',
     ],
