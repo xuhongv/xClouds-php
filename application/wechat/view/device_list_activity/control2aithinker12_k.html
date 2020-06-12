@@ -306,20 +306,20 @@
             }
             ,
             clickRed: function () {
-                this.controlData.payload.value = "Red"
+                this.controlData.payload.value = [255, 0, 0]
                 //this.color.hue = 0;
                 this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
             }
             ,
             clickBlue: function () {
-                this.controlData.payload.value = "Blue"
+                this.controlData.payload.value = [0, 0, 255]
                 //this.color.hue = 215;
                 this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
             }
             ,
             clickGreen: function () {
                 //this.color.hue = 135;
-                this.controlData.payload.value = "Green"
+                this.controlData.payload.value = [0, 255, 0]
                 this.clientMqtt.publish(this.topicSub, JSON.stringify(this.controlData))
             }
             ,

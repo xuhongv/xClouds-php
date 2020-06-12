@@ -62,14 +62,6 @@
                 <a href="javascript:history.back();" class="weui-btn weui-btn_default">返回主页</a>
             </p>
         </div>
-        <!--<div class="weui-msg__extra-area">-->
-        <!--    <div class="weui-footer">-->
-        <!--        <p class="weui-footer__links">-->
-        <!--            <a href="javascript:void(0);" class="weui-footer__link">底部链接文本</a>-->
-        <!--        </p>-->
-        <!--        <p class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</p>-->
-        <!--    </div>-->
-        <!--</div>-->
     </div>
 </div>
 
@@ -104,7 +96,7 @@
         document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
     }
     let deviceList = {$list};
-    console.log("deviceList:",JSON.stringify(deviceList));
+    console.log("deviceList:", JSON.stringify(deviceList));
     if (deviceList) {
         if (deviceList.length > 0) {
             $("item-success").show();
@@ -203,10 +195,10 @@
     });
 
     $("ul").on({
-        touchstart: function(e) {
+        touchstart: function (e) {
             let that = this;
             // 长按事件触发
-            timeOutEvent = setTimeout(function() {
+            timeOutEvent = setTimeout(function () {
                 timeOutEvent = 0;
                 currentDevice = deviceList[$(that).index()];
                 console.log("device:", JSON.stringify(currentDevice));
@@ -216,19 +208,22 @@
             //长按400毫秒
             // e.preventDefault();
         },
-        touchmove: function() {
+        touchmove: function () {
             clearTimeout(timeOutEvent);
             timeOutEvent = 0;
         },
-        touchend: function() {
+        touchend: function () {
             clearTimeout(timeOutEvent);
             if (timeOutEvent != 0) {
                 // 点击事件
-                // location.href = '/a/live-rooms.html';
                 currentDevice = deviceList[$(this).index()];
                 let obj = deviceList[$(this).index()]
-                mHref = "{:url('DeviceListActivity/intoControl')}";
-                window.location.href = mHref + '?uuid=' + obj.uuid + "&user_id=" + obj.user_id;
+                if (obj.online) {
+                    mHref = "{:url('DeviceListActivity/intoControl')}";
+                    window.location.href = mHref + '?uuid=' + obj.uuid;
+                }else{
+                    alert('设备已离线');
+                }
             }
             return false;
         }
