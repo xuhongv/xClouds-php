@@ -50,4 +50,17 @@ class DeviceCenter
         return '/' . $type . '/' . $mac . '/devSub';
     }
 
+
+    /**
+     *  获取此设备是否支持该云端所控制
+     * @param $deviceType 设备类型
+     * @param $clouds 云端类型
+     * @return bool 是否支持这云端支持
+     */
+    public static function isSupportThisClouds($deviceType, $clouds)
+    {
+        $deviceAttr = config('devicesAttr.' . $deviceType);
+        return (array_key_exists($clouds, $deviceAttr));
+    }
+
 }

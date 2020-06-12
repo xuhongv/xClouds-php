@@ -263,5 +263,21 @@ class DeviceListActivity extends BaseWeChat
     }
 
 
+    public function control2aithinker12K($deviceId, $deviceName, $uuid, $type)
+    {
+        $data = [
+            'deviceId' => $deviceId,
+            'name' => $deviceName,
+            'uuid' => $uuid,
+            'type' => $type,
+            'topicSub' => getDeviceTopicSub($type, $uuid),
+            'topicPub' => getDeviceTopicPub($type, $uuid),
+            'clientId' => 'wc_' . md5(time()),
+            'mqtt' => config('mqtt'),
+        ];
+        $this->assign('config', json_encode($data));
+        return $this->fetch('', ['device' => $data]);
+        return '';
+    }
 
 }

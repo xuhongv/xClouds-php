@@ -104,6 +104,7 @@
         document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
     }
     let deviceList = {$list};
+    console.log("deviceList:",JSON.stringify(deviceList));
     if (deviceList) {
         if (deviceList.length > 0) {
             $("item-success").show();
@@ -193,17 +194,45 @@
         });
     });
 
-    $("ul li").click(function () {
+    $("ul21321").click(function () {
         // currentDevice = deviceList[$(this).index()];
         // console.log("device:", JSON.stringify(currentDevice));
         // $iosActionsheet.addClass('weui-actionsheet_toggle');
         // $iosMask.fadeIn(200);
 
-        currentDevice = deviceList[$(this).index()];
-        let obj = deviceList[$(this).index()]
-        mHref = "{:url('DeviceListActivity/intoControl')}";
-        window.location.href = mHref + '?uuid=' + obj.uuid + "&user_id=" + obj.user_id;
     });
+
+    $("ul").on({
+        touchstart: function(e) {
+            let that = this;
+            // 长按事件触发
+            timeOutEvent = setTimeout(function() {
+                timeOutEvent = 0;
+                currentDevice = deviceList[$(that).index()];
+                console.log("device:", JSON.stringify(currentDevice));
+                $iosActionsheet.addClass('weui-actionsheet_toggle');
+                $iosMask.fadeIn(200);
+            }, 400);
+            //长按400毫秒
+            // e.preventDefault();
+        },
+        touchmove: function() {
+            clearTimeout(timeOutEvent);
+            timeOutEvent = 0;
+        },
+        touchend: function() {
+            clearTimeout(timeOutEvent);
+            if (timeOutEvent != 0) {
+                // 点击事件
+                // location.href = '/a/live-rooms.html';
+                currentDevice = deviceList[$(this).index()];
+                let obj = deviceList[$(this).index()]
+                mHref = "{:url('DeviceListActivity/intoControl')}";
+                window.location.href = mHref + '?uuid=' + obj.uuid + "&user_id=" + obj.user_id;
+            }
+            return false;
+        }
+    })
 </script>
 
 </body>

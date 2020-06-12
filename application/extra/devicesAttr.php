@@ -514,6 +514,12 @@ return [
                 ], //颜色
             ]
         ],
+    ],
+    'esp32s2' => [
+        'ch' => '安信可ESP-12K',
+        'en' => 'aithinker-12K',
+        'htmlControl' => 'control2aithinker12K',
+
     ]
 
 ];

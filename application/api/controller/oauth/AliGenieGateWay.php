@@ -74,23 +74,24 @@ class AliGenieGateWay extends BaseController
             if (0 != $devicesNums) {
                 //= $deviceInf;
                 for ($i = 0; $i < $devicesNums; $i++) {
-                    //utilsSaveLogs('the device\'s type==>  ' . $device[$i]['type'], 3);
-                    $devices['devices'][$i] = [
-                        "deviceId" => $userId . '-' . (string)($device[$i]['device_id']),
-                        "deviceName" => $device[$i]['alias'],
-                        "deviceType" => DeviceCenter::getDeviceTypeToCloudsType($device[$i]['type'], $this->cloudsType),
-                        "zone" => "",
-                        "brand" => "",
-                        "model" => "AiClouds3.0",
-                        "icon" => $device[$i]['img'],
-                        "properties" => array()
-                        ,
-                        "actions" => DeviceCenter::getThisDeviceAllControlActions($device[$i]['type'], $this->cloudsType),
-                        "extensions" => array(
-                            "extension1" => "",
-                            "extension2" => ""
-                        ),
-                    ];
+                    //判断此设备是否支持天猫精灵语音控制
+                    if (DeviceCenter::isSupportThisClouds($device[$i]['type'], $this->cloudsType))
+                        array_push($devices['devices'], [
+                            "deviceId" => $userId . '-' . (string)($device[$i]['device_id']),
+                            "deviceName" => $device[$i]['alias'],
+                            "deviceType" => DeviceCenter::getDeviceTypeToCloudsType($device[$i]['type'], $this->cloudsType),
+                            "zone" => "",
+                            "brand" => "",
+                            "model" => "AiClouds3.0",
+                            "icon" => $device[$i]['img'],
+                            "properties" => array()
+                            ,
+                            "actions" => DeviceCenter::getThisDeviceAllControlActions($device[$i]['type'], $this->cloudsType),
+                            "extensions" => array(
+                                "extension1" => "",
+                                "extension2" => ""
+                            ),
+                        ]);
                 }
             }
         }
@@ -345,9 +346,9 @@ class AliGenieGateWay extends BaseController
         $post = input('post.');
 
         //生成日志
-       utilsSaveLogs('***********Aligenie to me gateway*************', 2);
+        utilsSaveLogs('***********Aligenie to me gateway*************', 2);
 //        utilsSaveLogs($poststr, 3);
-       utilsSaveLogs(json_encode($post), 2);
+        utilsSaveLogs(json_encode($post), 2);
 
         //解析成对象
         $getAligenieObj = json_decode($poststr);

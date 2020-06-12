@@ -107,13 +107,14 @@ class MiotGateWay extends BaseController
                 utilsSaveLogs('the MiIot user\'s nums == 0', 3);
                 return '';
             }
-
             for ($i = 0; $i < $devicesNums; $i++) {
-                $devices[$i] = [
-                    'did' => $userId . '-' . (string)($device[$i]['device_id']),
-                    'type' => config('devicesAttr.' . $device[$i]['type'])[$this->cloudsType]['model'],
-                    'name' => $device[$i]['alias'],
-                ];
+                //判断此设备是否支持米家语音控制
+                if (DeviceCenter::isSupportThisClouds($device[$i]['type'], $this->cloudsType))
+                    array_push($devices, [
+                        'did' => $userId . '-' . (string)($device[$i]['device_id']),
+                        'type' => config('devicesAttr.' . $device[$i]['type'])[$this->cloudsType]['model'],
+                        'name' => $device[$i]['alias'],
+                    ]);
             }
         }
         //utilsSaveLogs(json_encode($returnData), 3);
