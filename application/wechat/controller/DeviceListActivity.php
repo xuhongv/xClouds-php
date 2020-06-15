@@ -277,7 +277,6 @@ class DeviceListActivity extends BaseWeChat
         ];
         $this->assign('config', json_encode($data));
         return $this->fetch('', ['device' => $data]);
-        return '';
     }
 
 }
